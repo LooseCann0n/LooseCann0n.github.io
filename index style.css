@@ -2,30 +2,19 @@ html, body {
     margin: 0; padding: 0; border: 0; 
 }
 body {
-    background: #ccc
+    background: rgba(0, 0, 0, 0.85);
 }
 
-#left, #right {
-    position: fixed;
-    width: 75%;
-    height: 100%;
-    top: 0
-}
-#left {
-    background: grey;
-    left: 0
-}
-#right {
-    background: grey;
-    right: 0
-}
 #main {
     background: darkgrey;
     width: 70%;
-    margin: 0 auto;
-    position: relative
+    position: relative;
+    float: centre;
+    top: 0;
+    margin: auto;
+    padding: 20px;
+    min-height: 5000px;
 }
-  
 
 sidenav {
     margin: 0;
@@ -81,6 +70,21 @@ button1 {
 button1:hover {
     background-color: #34bdbd;
     color: black;
+  }
+
+  button2 {
+    background-color: rgb(41, 220, 38);
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+button2:hover {
+    background-color: #bd4f34;
+    color: rgb(255, 255, 255);
   }
 
 @media screen and (max-width: 700px) {

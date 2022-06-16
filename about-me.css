@@ -1,0 +1,41 @@
+html, body {
+    margin: 0; padding: 0; border: 0; 
+}
+body {
+    background: rgba(0, 0, 0, 0.85);
+}
+
+#main {
+    background: darkgrey;
+    width: 70%;
+    position: relative;
+    float: centre;
+    top: 0;
+    margin: auto;
+    padding: 20px;
+    min-height: 5000px;
+}
+
+sidenav {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: rgb(100, 91, 91);
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+
+}
+
+sidenav a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+
+tab {
+    overflow: visible;
+    border: 1px solid cadetblue;
+    background-color: black;
+}
