@@ -4,12 +4,27 @@ body {
     text-align: center;
 }
 
-content {
-    max-width: 500px;
-    margin: auto;
-    background: darkgrey;
-    padding: 10px;
+#left, #right {
+    position: fixed;
+    width: 75%;
+    height: 100%;
+    top: 0
 }
+#left {
+    background: black;
+    left: 0
+}
+#right {
+    background: black;
+    right: 0
+}
+#main {
+    background: darkgrey;
+    width: 70%;
+    margin: 0 auto;
+    position: relative
+}
+  
 
 sidenav {
     margin: 0;
