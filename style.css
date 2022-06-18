@@ -16,22 +16,23 @@ body {
     min-height: 5000px;
 }
 
-sidenav {
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    background-color: rgb(100, 91, 91);
-    position: fixed;
-    height: 100%;
-    overflow: auto;
-
+.sidenav {
+    overflow: hidden;
+    background-color: #333;
 }
 
-sidenav a {
-    display: block;
-    color: black;
-    padding: 16px;
+.sidenav a {
+    float: left;
+    color: grey;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
+    font-size: 17px;
+}
+
+.sidenav a:hover {
+    background-color: beige;
+    color: black;
 }
 
 tab {
