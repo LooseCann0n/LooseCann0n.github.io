@@ -13,27 +13,46 @@ body {
     top: 0;
     margin: auto;
     padding: 20px;
-    min-height: 5000px;
+    height:1000px
+}
+
+.sidenav-alignment{
+    width: 70%;
+    background-color: #333;
+    position: relative;
+    float: centre;
+    padding-left: 20px;
+    padding-right: 20px;
+    top: 0;
+    margin: auto;
 }
 
 .sidenav {
-    overflow: hidden;
+    overflow: auto;
     background-color: #333;
 }
 
 .sidenav a {
+    width: 10%;
     float: left;
+    position: relative;
     color: grey;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    
 }
 
 .sidenav a:hover {
-    background-color: beige;
+    background-color: lightgrey;
     color: black;
 }
+
+.sidenav a.active {
+    background-color: green;
+    color: black;
+  }
 
 tab {
     overflow: visible;
@@ -87,7 +106,7 @@ button2:hover {
     background-color: #bd4f34;
     color: rgb(255, 255, 255);
   }
-
+ /* 
 @media screen and (max-width: 700px) {
 sidenav {
     width: 100%;
@@ -95,4 +114,6 @@ sidenav {
     position: relative;
 }
 sidenav a {float: left;}
+
 }
+*/ 
