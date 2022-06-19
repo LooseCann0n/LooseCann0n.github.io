@@ -5,8 +5,25 @@ body {
     background: rgba(0, 0, 0, 0.85);
 }
 
+#title {
+    font-family: 'Helvetica Neue', sans-serif;
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 250%; 
+    font-weight: 100; 
+    line-height: 20px; 
+    letter-spacing: 1px; 
+    padding: 0 0 5px; 
+    border-bottom: double #555; 
+    border: 2px solid powderblue;
+}
+
+h2{
+    font-size: 100%;
+}
+
+
 #main {
-    background: darkgrey;
+    background: rgb(189, 180, 180);
     width: 70%;
     position: relative;
     float: centre;
