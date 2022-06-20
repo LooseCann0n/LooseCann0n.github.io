@@ -104,6 +104,9 @@ sidenav {
     position: relative;
 }
 
+.sidenav-alignment{
+    width: 92.5%;
+}
 
 #main {
     background: rgb(189, 180, 180);
