@@ -53,7 +53,7 @@ h2{
 }
 
 .sidenav a {
-    width: 10%;
+    width: 20%;
     float: left;
     position: relative;
     color: grey;
@@ -133,11 +133,14 @@ sidenav {
     border: 2px solid darkgray;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 0.5px;
-    min-width: 500px;
     white-space: normal;
 }
 
+}
 
-sidenav a {float: left;}
-
+@media screen and (max-width: 500px) {
+    #title
+    {
+        font-size: 150%;
+    }
 }
