@@ -7,14 +7,17 @@ body {
 
 #title {
     font-family: 'Helvetica Neue', sans-serif;
-    color: rgba(0, 0, 0, 0.85);
+    color: white;
+    background-color: #333;
     font-size: 250%; 
     font-weight: 100; 
     line-height: 20px; 
     letter-spacing: 1px; 
     padding: 0 0 5px; 
     border-bottom: double #555; 
-    border: 2px solid powderblue;
+    border: 2px solid darkgray;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.5px;
 }
 
 h2{
@@ -25,7 +28,7 @@ h2{
 #main {
     background: rgb(189, 180, 180);
     width: 70%;
-    position: relative;
+    position: static;
     float: centre;
     top: 0;
     margin: auto;
@@ -124,12 +127,26 @@ button2:hover {
     color: rgb(255, 255, 255);
   }
 
+/* Mobile settings */
 @media screen and (max-width: 700px) {
 sidenav {
     width: 100%;
     height: auto;
     position: relative;
 }
+
+#main {
+    background: rgb(189, 180, 180);
+    width: 100%;
+    position: relative;
+    float: centre;
+    top: 0;
+    margin: auto;
+    padding: 10px;
+    height:1000px
+}
+
+
 sidenav a {float: left;}
 
 }
