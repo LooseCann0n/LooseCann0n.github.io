@@ -31,7 +31,7 @@ body {
     font-weight: 100; 
     line-height: 16px; 
     letter-spacing: 1px; 
-    padding: 0 0 1px; 
+    padding: 0 0 5px; 
     border-bottom: double #555;    
     border: 2px solid darkgray;
     -webkit-text-fill-color: rgba(255, 255, 255, 0.75);
@@ -67,6 +67,11 @@ hr{
    width: 80%;
 }
 
+br{
+    display: block;
+    margin: 10px 0;
+}
+
 #main {
     background: rgb(107, 104, 104);
     width: 70%;
@@ -75,9 +80,16 @@ hr{
     top: 0;
     margin: auto;
     padding: 20px;
-    height:1000px
+    height: auto;
 }
 
+#image {
+    width: auto;
+    height: auto;
+    float: centre;
+}
+
+/* top nav */
 .topnav-alignment{
     width: 70%;
     background-color: #333;
@@ -160,23 +172,6 @@ topnav {
     padding: 10px;
     height:1000px
 }
-/* 
-#title {
-    font-family: 'Helvetica Neue', sans-serif;
-    color: white;
-    background-color: #333;
-    font-size: 200%;
-    font-size-adjust: none;
-    font-weight: 100; 
-    line-height: 20px; 
-    letter-spacing: 1px; 
-    padding: 0 0 1px; 
-    border-bottom: double #555; 
-    border: 2px solid darkgray;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 0.5px;
-    white-space: normal;
-} */
 
 #title {
     font-family: 'Helvetica Neue', sans-serif;
@@ -221,7 +216,7 @@ topnav {
     #smalltitle {
         background-color: lightblue;
         font-size:3vw;
-      }
+    }
 }
 
 
