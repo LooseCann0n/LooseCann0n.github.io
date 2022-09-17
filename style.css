@@ -1,76 +1,15 @@
-html, body {
-    margin: 0; padding: 0; border: 0; 
+html,
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
+
 body {
     background: rgba(0, 0, 0, 0.85);
 }
 
-#title {
-    font-family: 'Helvetica Neue', sans-serif;
-    color: white;
-    background-color: #333;
-    font-size: 250%; 
-    font-weight: 100; 
-    line-height: 20px; 
-    letter-spacing: 1px; 
-    padding: 0 0 1px; 
-    border-bottom: double #555; 
-    border: 2px solid darkgray;
-    -webkit-text-fill-color: rgba(255, 255, 255, 0.75);
-    -webkit-text-stroke: 0.8px;
-}
-
-#smalltitle {
-    font-family: 'Helvetica Neue', sans-serif;
-    color: white;
-    background-color: #333;
-    width: 75%;
-    margin: auto;
-    text-align: center;
-    font-size: 150%; 
-    font-weight: 100; 
-    line-height: 16px; 
-    letter-spacing: 1px; 
-    padding: 0 0 5px; 
-    border-bottom: double #555;    
-    border: 2px solid darkgray;
-    -webkit-text-fill-color: rgba(255, 255, 255, 0.75);
-    -webkit-text-stroke: 0.8px;
-}
-
-#smalltitle.c {
-    font-family: 'Helvetica Neue', sans-serif;
-    color: white;
-    background-color: #333;
-    width: 75%;
-    margin: auto;
-    text-align: center;
-    font-size: 150%; 
-    font-weight: 100; 
-    line-height: 16px; 
-    letter-spacing: 1px; 
-    padding: 0 0 1px; 
-    border-bottom: double #555;    
-    border: 2px solid darkgray;
-    -webkit-text-fill-color: rgba(255, 255, 255, 0.75);
-    -webkit-text-stroke: 0.8px;
-}
-
-h2{
-    font-family: "Lucida Console", "Courier New", monospace;
-    color: #333;
-    font-size: 90%;
-}
-
-hr{
-   color: white;
-   width: 80%;
-}
-
-br{
-    display: block;
-    margin: 10px 0;
-}
+/* #region || GENERAL STYLES */
 
 #main {
     background: rgb(107, 104, 104);
@@ -83,14 +22,76 @@ br{
     height: auto;
 }
 
-#image {
-    width: auto;
-    height: auto;
-    float: centre;
+/* #endregion  */ 
+
+/* #region || TITLES */
+
+#title {
+    font-family: 'Helvetica Neue', sans-serif;
+    color: white;
+    background-color: #333;
+    font-size: 250%;
+    font-weight: 100;
+    line-height: 20px;
+    letter-spacing: 1px;
+    padding: 0 0 1px;
+    border-bottom: double #555;
+    border: 2px solid darkgray;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.75);
+    -webkit-text-stroke: 0.8px;
 }
 
-/* top nav */
-.topnav-alignment{
+#smalltitle {
+    font-family: 'Helvetica Neue', sans-serif;
+    color: white;
+    background-color: #333;
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    font-size: 150%;
+    font-weight: 100;
+    line-height: 16px;
+    letter-spacing: 1px;
+    padding: 0 10px 20px;
+    border-bottom: double #555;
+    border: 2px solid darkgray;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.75);
+    -webkit-text-stroke: 0.8px;
+}
+
+#smalltitle.c {
+    font-family: 'Helvetica Neue', sans-serif;
+    color: white;
+    background-color: #333;
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    font-size: 150%;
+    font-weight: 100;
+    line-height: 16px;
+    letter-spacing: 1px;
+    padding: 0 0 1px;
+    border-bottom: double #555;
+    border: 2px solid darkgray;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.75);
+    -webkit-text-stroke: 0.8px;
+}
+
+/* #endregion */
+
+/* #region || HEADINGS */
+
+h2 {
+    font-family: "Lucida Console", "Courier New", monospace;
+    color: #333;
+    font-size: 90%;
+}
+
+/* #endregion */
+
+/* #region || TOP NAV */
+
+.topnav-alignment {
     width: 70%;
     background-color: #333;
     position: relative;
@@ -115,7 +116,7 @@ br{
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-    
+
 }
 
 .topnav a:hover {
@@ -126,13 +127,61 @@ br{
 .topnav a.active {
     background-color: darkslategray;
     color: white;
-  }
-
-tab {
-    overflow: visible;
-    border: 1px solid cadetblue;
-    background-color: black;
 }
+
+/* #endregion */
+
+/* #region || IMAGES */
+
+img {
+    max-width: 95%;
+    height: auto;
+}
+
+img:hover {
+    transition: 200ms;
+    transform: scale(1.05);
+    opacity: 0.9;
+    border: #333;
+}
+
+/* #endregion */
+
+/* #region || UI */
+
+hr {
+    color: white;
+    width: 80%;
+}
+
+br {
+    display: block;
+    margin: 10px 0;
+}
+
+.box {
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    border: 1px solid rgba(0, 0, 0, .2);
+}
+
+.blue {
+    background: #13b4ff;
+}
+
+.purple {
+    background: #ab3fdd;
+}
+
+.wine {
+    background: #ae163e;
+}
+
+/* #endregion */
+
+/* #region || BUTTON */
 
 button {
     background-color: crimson;
@@ -148,75 +197,85 @@ button {
 button:hover {
     background-color: #34bd38;
     color: white;
-  }
+}
 
-/* Mobile settings */
+
+tab {
+    overflow: visible;
+    border: 1px solid cadetblue;
+    background-color: black;
+}
+
+/* #endregion */
+
+/* #region || MOBILE SETTINGS */
+
 @media screen and (max-width: 800px) {
-topnav {
-    width: 100%;
-    height: auto;
-    position: relative;
-}
+    topnav {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
 
-.topnav-alignment{
-    width: auto;
-}
+    .topnav-alignment {
+        width: auto;
+    }
 
-#main {
-    background: rgb(107, 104, 104);
-    width: 92.5%;
-    position: relative;
-    float: centre;
-    top: 0;
-    margin: auto;
-    padding: 10px;
-    height:1000px
-}
+    #main {
+        background: rgb(107, 104, 104);
+        width: 92.5%;
+        position: relative;
+        float: centre;
+        top: 0;
+        margin: auto;
+        padding: 10px;
+        height: 1000px
+    }
 
-#title {
-    font-family: 'Helvetica Neue', sans-serif;
-    color: white;
-    background-color: #333;
-    font-size: 250%; 
-    font-weight: 100; 
-    line-height: 20px; 
-    letter-spacing: 1px; 
-    padding: 0 0 1px; 
-    border-bottom: double #555; 
-    border: 2px solid darkgray;
-    -webkit-text-fill-color: rgba(255, 255, 255, 0.75);
-    -webkit-text-stroke: 0.8px;
-}
+    #title {
+        font-family: 'Helvetica Neue', sans-serif;
+        color: white;
+        background-color: #333;
+        font-size: 250%;
+        font-weight: 100;
+        line-height: 20px;
+        letter-spacing: 1px;
+        padding: 0 0 1px;
+        border-bottom: double #555;
+        border: 2px solid darkgray;
+        -webkit-text-fill-color: rgba(255, 255, 255, 0.75);
+        -webkit-text-stroke: 0.8px;
+    }
 
-#smalltitle {
-    font-family: 'Helvetica Neue', sans-serif;
-    color: white;
-    background-color: #333;
-    width: relative;
-    margin: auto;
-    text-align: center;
-    font-size: 100%; 
-    font-weight: 100; 
-    line-height: 16px; 
-    letter-spacing: 1px; 
-    padding: 0 0 1px; 
-    border-bottom: double #555;    
-    border: 2px solid darkgray;
-    -webkit-text-fill-color: rgba(255, 255, 255, 0.75);
-    -webkit-text-stroke: 0.8px;
-}
+    #smalltitle {
+        font-family: 'Helvetica Neue', sans-serif;
+        color: white;
+        background-color: #333;
+        width: relative;
+        margin: auto;
+        text-align: center;
+        font-size: 100%;
+        font-weight: 100;
+        line-height: 16px;
+        letter-spacing: 1px;
+        padding: 0 0 1px;
+        border-bottom: double #555;
+        border: 2px solid darkgray;
+        -webkit-text-fill-color: rgba(255, 255, 255, 0.75);
+        -webkit-text-stroke: 0.8px;
+    }
 
 }
 
 @media only screen and (max-width: 651px) {
-    #title
-    {
-        font-size:5vw;
+    #title {
+        font-size: 5vw;
     }
+
     #smalltitle {
         background-color: lightblue;
-        font-size:3vw;
+        font-size: 3vw;
     }
 }
 
-
+/* #endregion */
