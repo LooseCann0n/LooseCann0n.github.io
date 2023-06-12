@@ -47,6 +47,7 @@ body {
     background-color: #333;
     width: 75%;
     margin: auto;
+    text-align: center;
     font-size: 150%;
     font-weight: 100;
     line-height: 16px;
@@ -64,6 +65,7 @@ body {
     background-color: #333;
     width: 75%;
     margin: auto;
+    text-align: center;
     font-size: 150%;
     font-weight: 100;
     line-height: 16px;
@@ -75,18 +77,20 @@ body {
     -webkit-text-stroke: 0.8px;
 }
 
+#contacts {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
 /* #endregion */
 
 /* #region || HEADINGS */
 
-h1 {
-    text-align: center;
-}
-
 h2 {
     font-family: "Lucida Console", "Courier New", monospace;
     color: #333;
-    font-size: 100%;
+    font-size: 90%;
 }
 
 /* #endregion */
@@ -106,7 +110,6 @@ h2 {
 
 .topnav {
     overflow: auto;
-    text-align: left;
     background-color: #333;
 }
 
@@ -137,41 +140,16 @@ h2 {
 /* #region || IMAGES */
 
 img {
-    max-width: 100%;
-    height: auto;
-}
-
-.alignleft
-{
-    text-align: left;
-}
-
-.aligncenter
-{
-    text-align: center;
-}
-
-.interactable
-{
     max-width: 95%;
-    transition: transform .2s;
+    height: auto;
+    transition: 200ms;
 }
 
-.interactable:hover
-{
-    -ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1.5); /* Safari 3-8 */
+img:hover {
     transform: scale(1.05);
     opacity: 0.9;
     border: #333;
 }
-
-.circle {
-    max-width: 20%;
-    text-align: left;
-    border-radius: 50%;
-}
-
 
 /* #endregion */
 
@@ -187,7 +165,7 @@ br {
     margin: 10px 0;
 }
 
-/* .box {
+.box {
     text-align: center;
     width: 100px;
     height: 100px;
@@ -205,7 +183,7 @@ br {
 
 .wine {
     background: #ae163e;
-} */
+}
 
 /* #endregion */
 
@@ -215,18 +193,21 @@ button {
     background-color: crimson;
     border: none;
     color: white;
-    padding: 15px 32px;
-    text-align: center;
+    padding: 15px 50px;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    transition: 150ms;
+    margin-right: 10px;
 }
 
 button:hover {
     background-color: #34bd38;
     color: white;
+    transform: scale(1.1);
 }
 
+.buttonround {border-radius: 8px;}
 
 tab {
     overflow: visible;
