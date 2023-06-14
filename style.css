@@ -74,6 +74,27 @@ body {
     border: 2px solid darkgray;
 }
 
+.skills {
+    
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: start;
+    gap: 5px;
+}
+
+li{
+    background-color: #04041ebf;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 200ms;
+    margin-right: 15px;
+    border-radius: 8px;
+}
+
 #contacts {
     display: flex;
     justify-content: center;

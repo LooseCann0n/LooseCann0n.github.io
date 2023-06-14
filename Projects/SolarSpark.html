@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../style.css">
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script>
+      // Create a YouTube player when the API is ready
+      function onYouTubeIframeAPIReady() {
+        var player = new YT.Player('player', {
+          height: '360',
+          width: '640',
+          videoId: 'qgrneknSSBU',
+        });
+      }
+    </script>
+
 </head>
 
 <div class="topnav-alignment">
@@ -32,8 +45,14 @@
                 <h1>Solar Spark - CaliCat Studios</h1>
                 <br>
                 <h2>2:2</h2>
+                <div class="skills">
+                    <li>C#</li>
+                    <li>Unity</li>
+                    <li>Git</li>
+                </div>
 
-                <iframe width="560" height="315" src="https://www.youtube.com/watch?v=qgrneknSSBU&t=1s" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                <div id="player"></div>
+                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/qgrneknSSBU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
 
             </div>
 
