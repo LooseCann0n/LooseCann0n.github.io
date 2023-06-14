@@ -42,7 +42,7 @@ body {
     -webkit-text-stroke: 1px; */
 }
 
-.smalltitle {
+.smallbox {
     font-family: 'Lucida Console', sans-serif;
     color: white;
     background-color: #333;
@@ -58,13 +58,13 @@ body {
     border: 2px solid darkgray;
 }
 
-.smalltitle.c {
+.smallbox.l {
     font-family: 'Helvetica Neue', sans-serif;
     color: white;
     background-color: #333;
     width: 75%;
     margin: auto;
-    text-align: center;
+    text-align: left;
     font-size: 150%;
     font-weight: 100;
     line-height: 16px;
@@ -114,17 +114,19 @@ h2 {
     width: 20%;
     float: left;
     position: relative;
-    color: grey;
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
-
+    font-size: 22px;
+    opacity: 0.6;
+    transition: 0.5s;
 }
 
 .topnav a:hover {
     background-color: lightgrey;
     color: black;
+    opacity: 1;
 }
 
 .topnav a.active {
@@ -187,24 +189,23 @@ br {
 /* #region || BUTTON */
 
 button {
-    background-color: crimson;
+    background-color: #04041ebf;
     border: none;
     color: white;
-    padding: 15px 50px;
+    padding: 30px 75px;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    transition: 150ms;
-    margin-right: 10px;
+    font-size: 30px;
+    transition: 200ms;
+    margin-right: 15px;
+    border-radius: 8px;
 }
 
 button:hover {
-    background-color: #34bd38;
+    background-color: #04041ebf;
     color: white;
     transform: scale(1.1);
 }
-
-.buttonround {border-radius: 8px;}
 
 tab {
     overflow: visible;
@@ -253,7 +254,7 @@ tab {
         -webkit-text-stroke: 0.8px;
     }
 
-    .smalltitle {
+    .smallbox.c {
         font-family: 'Helvetica Neue', sans-serif;
         color: white;
         background-color: #333;
@@ -287,7 +288,7 @@ tab {
         font-size: 5vw;
     }
 
-    #smalltitle {
+    #smallbox.smallbox.c {
         background-color: lightblue;
         font-size: 3vw;
     }
