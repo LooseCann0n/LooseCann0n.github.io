@@ -6,6 +6,18 @@
     <title>Document</title>
     <link rel="stylesheet" href="../style.css">
 
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script>
+      // Create a YouTube player when the API is ready
+      function onYouTubeIframeAPIReady() {
+        var player = new YT.Player('player', {
+          height: '540',
+          width: '1000',
+          videoId: '4f8x1sx2xSQ',
+        });
+      }
+    </script>
+
 </head>
 
 <div class="topnav-alignment">
@@ -21,7 +33,6 @@
     <div class="main">      
             <div class=title>
                 <h1><center>Thomas Billett</center></h1>
-                <h2><center>Dissertation</h2></center>
             </div>
             
             <br>
@@ -30,12 +41,18 @@
 
 
             <div class="smallbox l">
+                <h1>Dissertation 
+                    <a href="../portfolio.html#dissertation-anchor">
+                        <button class = "backbutton">Back</button>
+                    </a>
+                </h1>
                 <br>
                 <h2>2:2</h2>
                 <div class="skills">
                     <li>C#</li>
                     <li>Unity</li>
-                    <li>Git</li>
+                    <li>R</li>
+                    <li>LaTeX</li>
                 </div>
 
                 <div id="player"></div>
