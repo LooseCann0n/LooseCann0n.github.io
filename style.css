@@ -144,16 +144,18 @@ h2 {
     transition: 0.5s;
 }
 
+.topnav a.active {
+    color: white;
+    border-bottom: 3px solid lightblue;
+}
+
 .topnav a:hover {
     background-color: lightgrey;
     color: black;
     opacity: 1;
 }
 
-.topnav a.active {
-    background-color: darkslategray;
-    color: white;
-}
+
 
 /* #endregion */
 
@@ -226,6 +228,19 @@ button:hover {
     background-color: #04041ebf;
     color: white;
     transform: scale(1.1);
+}
+
+.backbutton {
+    background-color: #04041ebf;
+    border: none;
+    color: white;
+    padding: 20px 50px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    transition: 200ms;
+    margin-right: 15px;
+    border-radius: 8px;
 }
 
 tab {
