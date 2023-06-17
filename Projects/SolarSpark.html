@@ -6,17 +6,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="../style.css">
 
+
     <script src="https://www.youtube.com/iframe_api"></script>
-    <script>
-      // Create a YouTube player when the API is ready
-      function onYouTubeIframeAPIReady() {
-        var player = new YT.Player('player', {
-          height: '540',
-          width: '1000',
-          videoId: 'qgrneknSSBU',
-        });
-      }
-    </script>
+    <script src="../videoresize.js"> </script>
+    
+   
 
 </head>
 
@@ -55,7 +49,9 @@
                     <li>Git</li>
                 </div>
 
-                <div id="player"></div>
+                <div class="player-container">
+                    <div id="player"></div>
+                </div>
                 <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/qgrneknSSBU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
 
             </div>
