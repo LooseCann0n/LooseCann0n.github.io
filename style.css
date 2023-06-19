@@ -255,13 +255,18 @@ tab {
 
 @media screen and (max-width: 800px) {
     topnav {
-        width: 100%;
+        width: 50%;
         height: auto;
         position: relative;
     }
 
     .topnav-alignment {
-        width: auto;
+        width: 100%;
+    }
+
+    .topnav a {
+        width: 20%;
+        padding: 12px 8px;
     }
 
     .main {
@@ -344,6 +349,14 @@ tab {
         transition: 200ms;
         margin-right: 15px;
         border-radius: 8px;
+    }
+
+    h1 {
+        font-size: 100%;
+    }
+
+    h2 {
+        font-size: 80%;
     }
 
     hr {
