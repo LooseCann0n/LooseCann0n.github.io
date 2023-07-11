@@ -245,7 +245,7 @@ button {
 }
 
 button:hover {
-    background-color: #04041ebf;
+    background-color: #080837b4;
     color: white;
     transform: scale(1.1);
 }
@@ -260,6 +260,17 @@ button:hover {
     font-size: 30px;
     transition: 200ms;
     margin-right: 15px;
+    border-radius: 8px;
+}
+
+.downloadbutton {
+    background-color: #04041ebf;
+    border: none;
+    color: white;
+    padding: 20px 50px;
+    text-decoration: none;
+    font-size: 30px;
+    transition: 200ms;
     border-radius: 8px;
 }
 
