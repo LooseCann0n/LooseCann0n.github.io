@@ -45,6 +45,12 @@ button:hover {
     border-radius: 8px;
 }
 
+.buttoncontainer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
 @media (max-width: 768px)
 {
     button {
