@@ -1,0 +1,68 @@
+.skills {
+    
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: start;
+    gap: 5px;
+}
+
+li{
+    background-color: #04041ebf;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 200ms;
+    margin-right: 15px;
+    border-radius: 8px;
+}
+
+.buttoncontainer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.description {
+    font-size: 16px;
+}
+
+.player-container {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    height: auto;
+}
+
+.itch-container {
+    width: auto;
+    height: auto;
+}
+
+iframe {
+    width: 100%;
+    /* height: auto;
+    object-fit: contain; */
+  }
+
+/* Images */
+
+.container {
+    background-size: contain;
+    overflow: none;
+}
+
+img {
+    max-width: 90%;
+    height: auto;
+    transition: 200ms;
+}
+
+img:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+    border: #333;
+    outline: solid 2px rgb(66, 184, 135);
+
+}

@@ -1,0 +1,39 @@
+h2 {
+    font-family: "Lucida Console", "Courier New", monospace;
+    color: white;
+    font-size: 90%;
+}
+
+hr {
+    color: white;
+    width: 82.5%;
+}
+
+br {
+    display: block;
+    margin: 10px 0;
+}
+
+.box {
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    border: 1px solid rgba(0, 0, 0, .2);
+}
+
+@media (max-width: 768px) 
+{
+    h1 {
+        font-size: 90%;
+    }
+
+    h2 {
+        font-size: 80%;
+    }
+
+    hr {
+        color: white;
+        width: 90%;
+    }
+}

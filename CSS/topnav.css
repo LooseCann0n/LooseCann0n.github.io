@@ -1,0 +1,56 @@
+.topnav-alignment {
+    width: 50%;
+    background-color: #86878F;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    top: 0;
+    margin: auto;
+}
+
+.topnav {
+    overflow: auto;
+    background-color: #86878F;
+}
+
+.topnav a {
+    width: 20%;
+    float: left;
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 22px;
+    opacity: 0.6;
+    transition: 0.5s;
+}
+
+.topnav a.active {
+    color: white;
+    border-bottom: 3px solid #081f3c
+}
+
+.topnav a:hover {
+    background-color: lightgrey;
+    color: black;
+    opacity: 1;
+}
+
+@media (max-width: 768px)
+{
+    topnav {
+        width: 50%;
+        height: auto;
+        position: relative;
+    }
+
+    .topnav-alignment {
+        width: 100%;
+    }
+
+    .topnav a {
+        width: 20%;
+        padding: 12px 8px;
+    }
+}

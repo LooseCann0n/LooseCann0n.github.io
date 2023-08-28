@@ -1,0 +1,100 @@
+.title {
+    font-family: 'Lucida Console', sans-serif;
+    color: white;
+    background-color: #081f3c;
+    font-size: 200%;
+    font-weight: 100;
+    line-height: 20px;
+    letter-spacing: 1px;
+    padding: 1px 10px 1px;
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    border-bottom: double #555;
+    border: 2px solid white;
+    border-radius: 16px;
+    /* -webkit-text-fill-color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1px; */
+}
+
+.smallbox {
+    font-family: 'Lucida Console', sans-serif;
+    color: white;
+    background-color: #67615F;
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    font-size: 100%;
+    font-weight: 100;
+    line-height: 16px;
+    letter-spacing: 1px;
+    padding: 10px 10px 20px;
+    border-bottom: double #555;
+    border: 2px solid white;
+    border-radius: 8px;
+}
+
+.smallbox.l {
+    font-family: 'Helvetica Neue', sans-serif;
+    color: white;
+    background-color: #67615F;
+    width: 75%;
+    margin: auto;
+    text-align: left;
+    font-size: 100%;
+    font-weight: 100;
+    line-height: 16px;
+    letter-spacing: 1px;
+    padding: 10px 10px 20px;
+    border-bottom: double #555;
+    border: 2px solid white;
+}
+
+@media (max-width: 768px)
+{
+    .main {
+        width: 92.5%;
+        position: relative;
+        float: centre;
+        top: 0;
+        margin: auto;
+        padding: 10px;
+        height: auto;
+    }
+
+    .title {
+        font-family: 'Helvetica Neue', sans-serif;
+        color: white;
+        font-size: 250%;
+        font-weight: 100;
+        line-height: 20px;
+        letter-spacing: 1px;
+        padding: 0 0 1px;
+    }
+
+    .smallbox {
+        font-family: 'Helvetica Neue', sans-serif;
+        color: white;
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        font-size: 100%;
+        font-weight: 100;
+        line-height: 16px;
+        letter-spacing: 1px;
+        padding: 0 0 1px;
+    }
+
+    .smallbox.l {
+        font-family: 'Helvetica Neue', sans-serif;
+        color: white;
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        font-size: 2em;
+        font-weight: 100;
+        line-height: 16px;
+        letter-spacing: 1px;
+        padding: 0 0 1px;
+    }
+}
