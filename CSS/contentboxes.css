@@ -1,7 +1,6 @@
 .title {
-    font-family: 'Lucida Console', sans-serif;
     color: white;
-    background-color: #081f3c;
+    background-color: var(--title-color);
     font-size: 200%;
     font-weight: 100;
     line-height: 20px;
@@ -10,7 +9,6 @@
     width: 75%;
     margin: auto;
     text-align: center;
-    border-bottom: double #555;
     border: 2px solid white;
     border-radius: 16px;
     /* -webkit-text-fill-color: rgb(255, 255, 255);
@@ -18,10 +16,9 @@
 }
 
 .smallbox {
-    font-family: 'Lucida Console', sans-serif;
     color: white;
-    background-color: #67615F;
-    width: 75%;
+    background-color: var(--title-color);
+    width: 80%;
     margin: auto;
     text-align: center;
     font-size: 100%;
@@ -29,25 +26,13 @@
     line-height: 16px;
     letter-spacing: 1px;
     padding: 10px 10px 20px;
-    border-bottom: double #555;
     border: 2px solid white;
     border-radius: 8px;
 }
 
 .smallbox.l {
-    font-family: 'Helvetica Neue', sans-serif;
-    color: white;
-    background-color: #67615F;
-    width: 75%;
-    margin: auto;
     text-align: left;
-    font-size: 100%;
-    font-weight: 100;
-    line-height: 16px;
-    letter-spacing: 1px;
-    padding: 10px 10px 20px;
-    border-bottom: double #555;
-    border: 2px solid white;
+    padding: 0px 10px 0px;
 }
 
 @media (max-width: 768px)

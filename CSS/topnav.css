@@ -1,6 +1,6 @@
 .topnav-alignment {
-    width: 50%;
-    background-color: #86878F;
+    width: 55%;
+    background-color: var(--topnav-color);
     position: relative;
     padding-left: 20px;
     padding-right: 20px;
@@ -10,7 +10,7 @@
 
 .topnav {
     overflow: auto;
-    background-color: #86878F;
+    background-color: var(--topnav-color);
 }
 
 .topnav a {
@@ -24,17 +24,20 @@
     font-size: 22px;
     opacity: 0.6;
     transition: 0.5s;
+    border-bottom: 3px solid var(--topnav-color)
 }
 
 .topnav a.active {
     color: white;
-    border-bottom: 3px solid #081f3c
+    opacity: 0.75;
+    border-bottom: 3px solid var(--title-color)
 }
 
 .topnav a:hover {
-    background-color: lightgrey;
-    color: black;
+    background-color: var(--title-color);
+    color: white;
     opacity: 1;
+    border-bottom: 3px solid var(--title-color)
 }
 
 @media (max-width: 768px)

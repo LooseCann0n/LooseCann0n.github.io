@@ -1,12 +1,17 @@
+*
+{
+    font-family: sans-serif;
+}
+
 h2 {
     font-family: "Lucida Console", "Courier New", monospace;
     color: white;
-    font-size: 90%;
+    font-size: 125%;
 }
 
 hr {
-    color: white;
-    width: 82.5%;
+    color: var(--body-bg-color);
+    width: 90%;
 }
 
 br {
