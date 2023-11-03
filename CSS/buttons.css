@@ -1,22 +1,17 @@
 button {
-    background-color: #04041ebf;
+    background: var(--button-color);
     border: none;
     color: white;
     /* padding: 30px 75px; */
     padding: 30px 75px;
     text-decoration: none;
     display: inline-block;
-    font-size: 30px;
+    font-size: 2em;
     transition: 200ms;
     border-radius: 8px;
 }
 
-/* a {
-    font-size: 0;
-  } */
-
 button:hover {
-    background-color: #080837b4;
     color: white;
     transform: scale(1.1);
 }
@@ -28,7 +23,7 @@ button:hover {
     padding: 20px 50px;
     text-decoration: none;
     display: inline-block;
-    font-size: 30px;
+    font-size: 2em;
     transition: 200ms;
     margin-right: 15px;
     border-radius: 8px;
@@ -40,7 +35,7 @@ button:hover {
     color: white;
     padding: 20px 50px;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 2em;
     transition: 200ms;
     border-radius: 8px;
 }
@@ -49,7 +44,7 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
+    gap: 2em;
 }
 
 @media (max-width: 768px)
@@ -60,7 +55,7 @@ button:hover {
         padding: 20px 0px;
         text-decoration: none;
         display: inline-block;
-        font-size: 20px;
+        font-size: 1.4em;
         transition: 200ms;
         margin-right: 15px;
         border-radius: 8px;
@@ -72,7 +67,7 @@ button:hover {
         padding: 10px 30px;
         text-decoration: none;
         display: inline-block;
-        font-size: 20px;
+        font-size: 1.4em;
         transition: 200ms;
         margin-right: 15px;
         border-radius: 8px;

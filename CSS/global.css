@@ -5,19 +5,19 @@
 
 h2 {
     font-family: "Lucida Console", "Courier New", monospace;
-    font-size: 125%;
+    font-size: 2em;
 }
 
 h3{
     font-family: "Lucida Console", "Courier New", monospace;
     color: var(--green-color);
-    font-size: 150%;
+    font-size: 2em;
 }
 
 h4{
     font-family: "Lucida Console", "Courier New", monospace;
     color: var(--green-color);
-    font-size: 100%;
+    font-size: 1em;
 }
 
 

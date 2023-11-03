@@ -13,7 +13,7 @@ li.s{
     color: white;
     padding: 10px 20px;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 1em;
     transition: 200ms;
     margin-right: 15px;
     border-radius: 8px;
@@ -24,7 +24,7 @@ li{
     color: white;
     padding: 10px 20px;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 1em;
     transition: 200ms;
     margin-right: 15px;
 }
@@ -34,6 +34,7 @@ ul {
 	list-style: none;
 	margin-left: 0;
 	padding-left: 1.2em;
+
 }
 
 .buttoncontainer {
@@ -43,8 +44,8 @@ ul {
 }
 
 .description {
-    font-size: 20px;
-    line-height: 20px
+    font-size: 1.1em;
+    line-height: 1.25em
 }
 
 .player-container {
