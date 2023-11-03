@@ -42,11 +42,15 @@ br {
 @media (max-width: 768px) 
 {
     h1 {
-        font-size: 90%;
+        font-size: 1.2em;
     }
 
     h2 {
-        font-size: 80%;
+        font-size: 1em;
+    }
+
+    h3 {
+        font-size: 1.4em;
     }
 
     hr {
@@ -54,3 +58,24 @@ br {
         width: 90%;
     }
 }
+
+@media (max-width: 500px) 
+{
+    h1 {
+        font-size: 1em;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    hr {
+        color: white;
+        width: 90%;
+    }
+}
+

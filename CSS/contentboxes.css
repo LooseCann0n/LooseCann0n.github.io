@@ -58,16 +58,11 @@
     }
 
     .smallbox {
-        font-family: 'Helvetica Neue', sans-serif;
         color: white;
-        width: 90%;
-        margin: auto;
-        text-align: center;
-        font-size: 100%;
-        font-weight: 100;
+        width: 80%;
         line-height: 16px;
         letter-spacing: 1px;
-        padding: 0 0 1px;
+        padding: 10px 10px 10px;
     }
 
     .smallbox.l {

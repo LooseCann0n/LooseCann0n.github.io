@@ -8,14 +8,6 @@
 }
 
 li.s{
-    background-color: #04041ebf;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-size: 1em;
-    transition: 200ms;
-    margin-right: 15px;
     border-radius: 8px;
 }
 
@@ -34,7 +26,6 @@ ul {
 	list-style: none;
 	margin-left: 0;
 	padding-left: 1.2em;
-
 }
 
 .buttoncontainer {
@@ -83,4 +74,20 @@ img.interactable:hover {
     opacity: 0.9;
     border: #333;
     outline: solid 2px var(--green-color);
+}
+
+@media (max-width: 768px)
+{
+    .description {
+        font-size: 0.6em;
+        line-height: 1em
+    }
+
+    ul {
+        font-size: 0.5em;
+    }
+
+    li.s{
+        font-size: 1em;
+    }
 }
