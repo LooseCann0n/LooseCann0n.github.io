@@ -25,7 +25,6 @@ button:hover {
     display: inline-block;
     font-size: 2em;
     transition: 200ms;
-    margin-right: 15px;
     border-radius: 8px;
 }
 
@@ -55,7 +54,6 @@ button:hover {
         padding: 30px 50px;
         font-size: 1.4em;
         transition: 200ms;
-        margin-right: 15px;
         border-radius: 8px;
     }
 

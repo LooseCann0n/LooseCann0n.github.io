@@ -76,7 +76,7 @@ img.interactable:hover {
     outline: solid 2px var(--green-color);
 }
 
-@media (max-width: 768px)
+@media (max-width: 1000px)
 {
     .description {
         font-size: 1em;

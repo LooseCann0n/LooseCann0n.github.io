@@ -33,9 +33,15 @@ body {
     height: auto;
 }
 
-@media (max-width: 768px)
+@media (max-width: 1000px)
 {
     .main {
-        width: 87.5%;
+        width: 92.5%;
+        position: relative;
+        float: centre;
+        top: 0;
+        margin: auto;
+        padding: 10px;
+        height: auto;
     }
 }
