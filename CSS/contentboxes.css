@@ -21,7 +21,6 @@
     width: 80%;
     margin: auto;
     text-align: center;
-    font-size: 100%;
     font-weight: 100;
     line-height: 16px;
     letter-spacing: 1px;
@@ -62,7 +61,6 @@
         width: 80%;
         line-height: 16px;
         letter-spacing: 1px;
-        padding: 10px 10px 10px;
     }
 
     .smallbox.l {
@@ -70,11 +68,20 @@
         color: white;
         width: 90%;
         margin: auto;
-        text-align: center;
-        font-size: 2em;
         font-weight: 100;
         line-height: 16px;
         letter-spacing: 1px;
-        padding: 0 0 1px;
+    }
+}
+
+/* mobile */
+@media (max-width: 500px)
+{  
+    .title {
+    width: 90%;
+    font-size: 200%;
+    font-weight: 100;
+    line-height: 30px;
+    letter-spacing: 1px;
     }
 }

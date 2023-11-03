@@ -43,17 +43,20 @@
 @media (max-width: 768px)
 {
     topnav {
-        width: 50%;
         height: auto;
         position: relative;
     }
 
     .topnav-alignment {
         width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
     }
 
     .topnav a {
         width: 20%;
-        padding: 12px 8px;
+        padding: 10px 8px;
+        font-size: 1.2em;
+
     }
 }
