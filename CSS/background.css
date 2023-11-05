@@ -3,6 +3,8 @@ body {
     margin: 0 auto;
     padding: 0;
     border: 0;
+    position: relative;
+
     overflow-x: hidden;
     overflow-y: scroll;
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
@@ -23,11 +25,10 @@ body {
     background: var(--main-bg-color);
     width: 55%;
     top: 0;  
-    /* display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    flex-grow: 4; */
-    margin: auto;
+    margin-top: 55px;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
     position: relative;
     padding: 20px;
     height: auto;
@@ -40,7 +41,7 @@ body {
         position: relative;
         float: centre;
         top: 0;
-        margin: auto;
+        margin-top: 45px;
         padding: 10px;
         height: auto;
     }

@@ -25,6 +25,7 @@ button:hover {
     display: inline-block;
     font-size: 2em;
     transition: 200ms;
+    margin-right: 15px;
     border-radius: 8px;
 }
 
@@ -46,7 +47,7 @@ button:hover {
     gap: 2em;
 }
 
-@media (max-width: 768px)
+@media (max-width: 1000px)
 {
     button {
         border: none;
