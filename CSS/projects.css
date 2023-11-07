@@ -58,11 +58,6 @@ iframe {
 
 /* Images */
 
-.container {
-    background-size: contain;
-    overflow: none;
-}
-
 img {
     max-width: 90%;
     height: auto;

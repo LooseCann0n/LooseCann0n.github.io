@@ -53,11 +53,11 @@ body {
     background-color: #081f3c;
     font-size: 200%;
     font-weight: 100;
-    line-height: 20px;
+    line-height: 1px;
     letter-spacing: 1px;
     padding: 1px 10px 1px;
     width: 75%;
-    margin: auto;
+    margin:0%;
     text-align: center;
     border-bottom: double #555;
     border: 2px solid white;

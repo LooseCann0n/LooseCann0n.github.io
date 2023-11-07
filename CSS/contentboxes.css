@@ -3,14 +3,15 @@
     background-color: var(--title-color);
     font-size: 200%;
     font-weight: 100;
-    line-height: 20px;
     letter-spacing: 1px;
-    padding: 1px 10px 1px;
+    padding: 30px 10px 30px;
     width: 75%;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     border: 2px solid white;
     border-radius: 16px;
+    white-space: normal;
     /* -webkit-text-fill-color: rgb(255, 255, 255);
     -webkit-text-stroke: 1px; */
 }
@@ -22,7 +23,6 @@
     margin: auto;
     text-align: center;
     font-weight: 100;
-    line-height: 16px;
     letter-spacing: 1px;
     padding: 10px 10px 10px;
     border: 2px solid white;
@@ -52,16 +52,12 @@
         color: white;
         font-size: 250%;
         font-weight: 100;
-        line-height: 20px;
-        letter-spacing: 1px;
-        padding: 0 0 1px;
+        padding: 10px 0 10px;
     }
 
     .smallbox {
         color: white;
         width: 80%;
-        line-height: 16px;
-        letter-spacing: 1px;
     }
 
     .smallbox.l {
@@ -70,8 +66,6 @@
         width: 90%;
         margin: auto;
         font-weight: 100;
-        line-height: 16px;
-        letter-spacing: 1px;
     }
 }
 
@@ -82,7 +76,5 @@
     width: 90%;
     font-size: 200%;
     font-weight: 100;
-    line-height: 30px;
-    letter-spacing: 1px;
     }
 }

@@ -5,11 +5,13 @@
 
 h1 {
     font-family: "Lucida Console", "Courier New", monospace;
-    font-size: 2.5em;
+    font-size: 2.5em; 
+    margin: 0;
 }
 h2 {
     font-family: "Lucida Console", "Courier New", monospace;
     font-size: 1.6em;
+    line-height: 0.9em;
 }
 
 h3{
@@ -22,6 +24,10 @@ h4{
     font-family: "Lucida Console", "Courier New", monospace;
     color: var(--green-color);
     font-size: 1em;
+}
+
+h5{
+    margin: 0;
 }
 
 
@@ -78,6 +84,10 @@ br {
 
     hr {
         width: 95%;
+    }
+
+    h5{
+        font-size: 0.6em;
     }
 }
 
