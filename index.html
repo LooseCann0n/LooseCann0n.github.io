@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 
 <!-- Root of the HTML document -->
-<html lang="en">
+<html lang="en" class="swup-enabled">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
     <link rel="stylesheet" href="CSS/contact.css">
     <link rel="stylesheet" href="CSS/colours.css">
     <link rel="stylesheet" href="CSS/contentboxes.css">
@@ -16,7 +16,10 @@
     <link rel="stylesheet" href="CSS/topnav.css">
     <link rel="stylesheet" href="CSS/background.css">
     <link rel="stylesheet" href="CSS/buttons.css">
+    <link rel="stylesheet" href="CSS/transitions.css">
 
+    <script defer src="node_modules/swup/dist/Swup.modern.js"></script>
+    <script defer src="script.js"></script>
     <script>
         function myFunction() {
            var element = document.body;
@@ -24,50 +27,64 @@
            element.classList.toggle("light-mode");
            title.classList.toggle("light-mode");
         }
-        </script>
+
+
+    </script>
 
 </head>
 
-<div class="topnav-alignment">
+<!-- <div class="topnav-alignment">
     <nav class="topnav">
         <a class="active" href="index.html">Home</a>
         <a href="about-me.html">CV</a>
         <a href="portfolio.html">Portfolio</a>
         <a href="contact.html">Contact</a>
     </nav>
-</div>
-<footer class="footer">© 2023 Thomas Billett. All Rights Reseerved.</footer>
+</div> -->
+
+    <footer class="footer">© 2023 Thomas Billett. All Rights Reseerved.</footer>
+
 
 <body>
-    <!-- <img src="Images/penumbra.png" alt="AI Page" width=”500″ height=”600″> -->
-    <div class="main">        
-            <div class=title>
-                <h1>Thomas Billett</h1>
-                <h5>Computing Graduate</h5>
-                <!-- <button onclick="myFunction()">Toggle dark mode</button> -->
-            </div>
+    <main id="swup" class="transition-fade">
 
-            <br>
-            <hr>
-            <br>
-
-            <div class="smallbox l">
-                <h1><center>Welcome to my Portfolio</center></h1>
-                <h2>Hello I am Thomas Billett a student graduate from Falmouth University!</h2>
-                    <br>
-                    <h3><i>This is a work in progress.</i></h3>
-                    <br>
-                    <h2>The Solar Spark page is complete under the <i>'Portfolio'</i> tab</h2>
-                
-                 
-            </div>
-
-            <br>
-            <hr>
-            <br>
-
-        
+    <div class="topnav-alignment">
+        <nav class="topnav">
+            <a href="index.html">Home</a>
+            <a href="about-me.html">CV</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a class="active"  href="contact.html">Contact</a>
+        </nav>
     </div>
-</body>
+    <!-- <img src="Images/penumbra.png" alt="AI Page" width=”500″ height=”600″> -->
+        <div class="main">        
+                <div class=title>
+                    <h1>Thomas Billett</h1>
+                    <h5>Computing Graduate</h5>
+                    <!-- <button onclick="myFunction()">Toggle dark mode</button> -->
+                </div>
 
+                <br>
+                <hr>
+                <br>
+
+                <div class="smallbox l">
+                    <h1><center>Welcome to my Portfolio</center></h1>
+                    <h2>Hello I am Thomas Billett a student graduate from Falmouth University!</h2>
+                        <br>
+                        <h3><i>This is a work in progress.</i></h3>
+                        <br>
+                        <h2>The Solar Spark page is complete under the <i>'Portfolio'</i> tab</h2>
+                    
+                    
+                </div>
+
+                <br>
+                <hr>
+                <br>
+
+            
+        </div>
+    </main>
+</body>
 </html>
