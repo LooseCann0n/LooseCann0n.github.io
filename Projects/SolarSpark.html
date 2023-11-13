@@ -109,7 +109,6 @@
             <h3>My Roles</h3>
                 <p class="description">
                 <ul class="innerfirst">
-                <!-- <li><b>Lead Programmer:</b></li> -->
                 <li><b>AI Programmer:</b> This was my specialism in the project and where a large amount of my efforts
                     were focused. Created AI systems for enemies.</li>
                 </ul>
@@ -118,21 +117,18 @@
                 <h3>Contributions</h3>
 
                 <ul>
-                    <li><b>Enemy AI & Animations: </b> I created sword and axe enemy variant, hooked up animations and
-                        repurposed existing AI functionality
-                        to create the final boss.
-                    <li>
+                    <li><b>Enemy AI & Animations: </b> I created the sword and axe enemy variants, configured animations and
+                        repurposed existing AI functionality to create the final boss.</li>                                        
                     <li><b>Input System: </b>Used Unity's input package to create a robust system, allowing for
-                        customisation for whatever we needed, also included input prompts
-                        with a corresponding icon regardless of what platform.</li>
-                    <li><b>Menu System: </b>Using simple button elements, I constructed the main menu, pause menu and
-                        settings menu. This also included a rebinding screen.</li>
-                    <li><b>Camera: </b>The Cinemachine package was used to get a basic camera, then finer details were
+                        customisation for whatever we needed. Also included input prompts
+                        with a corresponding icon for several different controller.</li>
+                    <li><b>Menu System:</b>Using simple button elements, I constructed the main menu, pause menu and
+                        settings menu,</li>
+                    <li><b>Camera:</b>The Cinemachine package was used to get a basic camera, then finer details were
                         adjusted to get the camera we desired.</li>
-                    <li><b>Build Creation: </b>I was responsible for creating weekly builds, to ensure frequent
+                    <li><b>Build Creation:</b>I was responsible for creating weekly builds to ensure frequent
                         playtesting.</li>
-                    <li><b>Trailer Materials:</b>I recorded gameplay footage, collected resources and materials for use
-                        in the trailer.</li>
+                    <li><b>Debug Tools:</b>To reduce designer <i>'blockers'</i> I created a noclip system and a checkpoint system.</li>
                     <li><b>Bugfixing:</b>Any bugs that were found during playtesting were noted down and fixed by me and the other programmers.</li>
                 </ul>
 
@@ -148,12 +144,12 @@
         <div class="smallbox l">
             <h3>Enemy AI</h3>
             <p class="description">
-                To create the AI, I decided to use Behaviour trees for the project. This was for several reasons:
+                To create the AI, I decided to use behaviour trees for the project. This was for several reasons:
             </p>
                 <ul>
                     <li>Ease of troubleshooting due to its visual nature.</li>
                     <li>Modularity allows nodes to be interchanged to quickly create or modify behaviours.</li>
-                    <li>Familarity with this approach.</li>
+                    <li>Familiarity with this approach.</li>
                 </ul>
             <p class="description">
                 I used a package from the asset store to avoid having to create a behaviour tree system from scratch which would have taken precious time from the project <i>see below</i>.
@@ -182,13 +178,21 @@
         <div class="smallbox l">
             <h3>Input System</h3>
             <p class="description">
-                Working closely with designers. The first step was to decide on what control layout we wanted, to serve
-                as our base preset.
+                Working closely with designers. The first step was to decide on what abilties and actions we wanted the player to have, afterward we could begin creating a control layout. We decided upon
+                a easy to pickup control scheme. So we decided upon a light attack & wide attack, a dash to quickly traverse the battlefield, a jump to navigate the environments, a interaction key, a block to
+                avoid enemy damage and with correct timing allow for a parry, a special attack and a healing ability.
+
+                <br>
+
+                I encouraged moving over to the new Unity input system as quickly as possible. As the longer this took the more code we would have to refactor and the less flexibility we would have with button interactions.
+                <!-- For the combat system we wanted a simple
+                easy to pickup control scheme. So we decided upon a light attack & wide attack, a dash to quickly traverse the battlefield. -->
+                
             </p>
 
-            <!-- <div class=".container">
-                    <img src="../Images/nier.jpg">
-                </div> -->
+            <div class=".container">
+                    <img src="../Images/RebindControls.png">
+                </div>
         </div>
 
         <br>
@@ -202,10 +206,9 @@
             <p class="description">
 
             </p>
-
-            <!-- <div class=".container">
-                    <img src="../Images/nier.jpg">
-                </div> -->
+<!-- 
+            <div class=".container">
+            </div> -->
         </div>
      
         <br>
@@ -217,7 +220,7 @@
             <h3>Camera</h3>
             <p class="description">
                 Since I had prior experience in creating a camera system I was chosen to make it. It would need to be
-                fast and responsive, in align with the fast paced hack and slash combat system. We drew inspiration
+                fast and responsive, in alignment with the fast paced hack and slash combat system. We drew inspiration
                 from games such as <i>Devil May Cry 5</i> and <i>NieR: Automata</i>.
             </p>
 
@@ -232,11 +235,11 @@
                 <!-- CineMachine pros list -->
             </p>
             <ul>
-                <li>Development time saved can be allocated elsewhere</li>
-                <li>It is highly customisable with a camera suitable for any genre of game</li>
-                <li>Supported by Unity as an offical package with its own documentation</li>
+                <li>Development time saved can be allocated elsewhere.</li>
+                <li>It is highly customisable with a camera suitable for any genre of game.</li>
+                <li>Supported by Unity as an offical package with its own documentation.</li>
                 <li>Changes are quick to make, mostly by changing values on components unless custom behaviours are
-                    required</li>
+                    required.</li>
             </ul>
             <p class="description">
                 In order to test the camera, I created a small environment with a variety of different walls to simulate
@@ -250,10 +253,10 @@
                 <br>
 
                 Later on in the project we were given feedback that we needed to improve game feel. Using <i>Cinemachine
-                impulse</i> allowed me add camera shake,
+                impulse</i> allowed me to add camera shake,
                 via an event. This meant that when the player dealt damage to enemies, used a special attack or took
-                damage. There would be a small amount
-                of shake. This achieved the intended effect of improving combat feel.
+                damage, there would be a small amount
+                of shake. This achieved the intended effect of improving game feel.
 
             </p>
 
