@@ -40,11 +40,14 @@ ul {
 .description {
     font-size: 1.3em;
     line-height: 1.1em;
+    margin: 6px;
 }
 
 .reference {
     font-style: italic;
     text-align: end;
+    margin: 6px;
+
 }
 
 .player-container {
@@ -68,7 +71,6 @@ img {
     max-width: 100%;
     height: auto;
     transition: 200ms;
-    margin-top: 8px;
 }
 
 img.interactable
