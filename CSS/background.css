@@ -5,16 +5,18 @@ body {
     border: 0;
     position: relative;
 
-    overflow-x: hidden;
-    overflow-y: scroll;
-    -ms-overflow-style: none;  /* Internet Explorer 10+ */
-    scrollbar-width: none;  /* Firefox */
+    /* overflow-x: hidden; */
+    /* overflow-y: scroll; */
+    /* scrollbar-width: none;  Firefox */
 }
 
-body::-webkit-scrollbar { /* WebKit */
+/* WebKit - removes scrollbar on chrome & internet explorer*/
+/* body::-webkit-scrollbar { 
     width: 0;
     height: 0;
-}
+}  */
+
+
 
 body {
     background: var(--body-bg-color);

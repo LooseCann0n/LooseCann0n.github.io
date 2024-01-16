@@ -55,14 +55,14 @@
         <!-- Game introduction-->
         <div class="smallbox l">
             <h1>Solar Spark - CaliCat Studios
-                <a href="../portfolio.html">
+                <!-- <a href="../portfolio.html">
                     <button class="backbutton">Back</button>
-                </a>
+                </a> -->
             </h1>
 
             <br>
 
-            <h2>Grade Awarded - 1st</h2>
+            <h3>Grade Awarded - 1st</h3>
 
             <!-- YouTube player embed -->
             <div class="player-container">
@@ -156,6 +156,13 @@
                 </ul>
             <p class="description">
                 I used a package from the asset store to avoid having to create a behaviour tree system from scratch which would have taken precious time from the project <i>see below</i>.
+                
+            </p>
+
+            <h4>Find Player</h4>
+            <p class="description">
+                I began by creating a node which would detect the player, so that only enemies close to the player would engage. I went with a 'field of view' cone approach, by checking collisions
+                in sphere then checking if there is a valid angle to the player.
             </p>
            
 
@@ -186,17 +193,23 @@
                 Working closely with designers. The first step was to decide on what abilties and actions we wanted the player to have, afterward we could begin creating a control layout. We decided upon
                 a easy to pickup control scheme. So we decided upon a light attack & wide attack, a dash to quickly traverse the battlefield, a jump to navigate the environments, a interaction key, a block to
                 avoid enemy damage and with correct timing allow for a parry, a special attack and a healing ability.
+            </p>
+            
+            <br>
 
-                <br>
-
+            <h4>Prompts</h4>
+            <p class="description">
                 I encouraged moving over to the new Unity input system as quickly as possible. As the longer this took the more code we would have to refactor and the less flexibility we would have with button interactions.
                 In additon, I used the <a id="link" href="https://assetstore.unity.com/packages/tools/gui/input-icons-for-tmpro-213736">Input Icons</a> package to create dynamic icon prompts in the tutorial, updating when the user
                 switches to a different input device.  
                 <!-- For the combat system we wanted a simple
                 easy to pickup control scheme. So we decided upon a light attack & wide attack, a dash to quickly traverse the battlefield. -->
+            </p>
+
+               
                 <br>
 
-            </p>
+
 
             <div class=".container">
                     <img src="../Images/CombinedInputImage.png">
@@ -214,15 +227,13 @@
 
 
         <!-- Menu box: -->
-        <div class="smallbox l">
+        <!-- <div class="smallbox l">
             <h3>Menu System</h3>
             <p class="description">
 
             </p>
-<!-- 
-            <div class=".container">
-            </div> -->
-        </div>
+
+        </div> -->
      
         <br>
         <hr>
@@ -237,16 +248,36 @@
                 from games such as <i>Devil May Cry 5</i> and <i>NieR: Automata</i>.
             </p>
 
-            <div class=".container">
-                <img src="../Images/nier.jpg">
+            <!-- <div class="flex-container">
+                <div class="image">
+                    <img src="../images/nier.jpg">
+                </div>
+                <div class="image">
+                    <img src="../images/nier.jpg">
+
+                </div>
+                <div class="image">
+                    <img src="../images/dmc5.jpg">
+                </div>
+                <div class="image">
+                    <img src="../images/dmc5.jpg">
+                </div> -->
+
+                <div class="image-wrapper">
+                    <img id="grid" src="../Images/nier.jpg">
+                    <img id="grid"src="../Images/nier.jpg">
+                    <img id="grid"src="../Images/DMC5.jpg">
+                    <img id="grid"src="../Images/DMC5.jpg">
+                </div>
                 <p class="reference">NieR: Automata by Square Enix.</p>
-            </div>
+
 
             <p class="description">
                 I decided to use <i>Cinemachine</i> for the camera system rather than creating my own from scratch.
                 Cinemachine has many advantages such as:
                 <!-- CineMachine pros list -->
             </p>
+
             <ul>
                 <li>Development time saved can be allocated elsewhere.</li>
                 <li>It is highly customisable with a camera suitable for any genre of game.</li>
@@ -254,6 +285,7 @@
                 <li>Changes are quick to make, mostly by changing values on components unless custom behaviours are
                     required.</li>
             </ul>
+
             <p class="description">
                 In order to test the camera, I created a small environment with a variety of different walls to simulate
                 the different elevations
@@ -262,17 +294,17 @@
                 that I was pleased with, I showed the progress to the team. The changes I made were to move the camera
                 further back. We felt that it being
                 close to the player could make it difficult to anticipate enemy movements.
-
+            </p>
                 <br>
 
+            <h4>Game Feel</h4>
+            <p class="description">
                 Later on in the project we were given feedback that we needed to improve game feel. Using <i>Cinemachine
                 impulse</i> allowed me to add camera shake,
                 via an event. This meant that when the player dealt damage to enemies, used a special attack or took
                 damage, there would be a small amount
                 of shake. This achieved the intended effect of improving game feel.
-
             </p>
-
         </div>
     </div>
 </body>
