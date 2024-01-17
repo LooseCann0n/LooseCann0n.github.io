@@ -18,7 +18,7 @@ h3{
     font-family: "Lucida Console", "Courier New", monospace;
     color: var(--green-color);
     font-size: 2.2em;
-    margin-top: 15px;
+    margin-top: 0px;
     margin-bottom: 15px;
 }
 
@@ -37,8 +37,10 @@ h5{
 
 
 hr {
-    color: var(--body-bg-color);
+    border: none;
+    background-color: var(--body-bg-color);
     width: 90%;
+    height: 2px
 }
 
 br {

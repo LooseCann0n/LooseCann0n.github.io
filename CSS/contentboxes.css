@@ -31,39 +31,24 @@
 
 .smallbox.l {
     text-align: left;
-    padding: 0px 10px 0px;
 }
 
 @media (max-width: 1000px)
 {
-    .main {
-        width: 92.5%;
-        position: relative;
-        float: centre;
-        top: 0;
-        margin: auto;
-        padding: 10px;
-        height: auto;
-    }
-
     .title {
         width: 85%;
         font-family: 'Helvetica Neue', sans-serif;
-        color: white;
         font-size: 250%;
         padding: 10px 0 10px;
     }
 
     .smallbox {
-        color: white;
         width: 80%;
     }
 
     .smallbox.l {
         font-family: 'Helvetica Neue', sans-serif;
-        color: white;
         width: 90%;
-        margin: auto;
     }
 }
 
