@@ -3,11 +3,11 @@
     background-color: var(--topnav-color);
     padding-left: 20px;
     padding-right: 20px;
-    position: fixed;
+    position: relative;
     left: 50%; transform: translate(-50%, 0);
-    margin: auto;
     top: 0;
     z-index: 1;
+
 }
 
 .topnav {

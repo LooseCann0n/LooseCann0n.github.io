@@ -1,22 +1,14 @@
-html,
+html {
+    overflow-x: hidden;
+    margin-right: calc(-1 * (100vw - 100%)); /* Stop page from moving when scrollbar is added */
+}
+  
 body {
     margin: 0 auto;
     padding: 0;
     border: 0;
-    position: relative;
 
-    /* overflow-x: hidden; */
-    /* overflow-y: scroll; */
-    /* scrollbar-width: none;  Firefox */
 }
-
-/* WebKit - removes scrollbar on chrome & internet explorer*/
-/* body::-webkit-scrollbar { 
-    width: 0;
-    height: 0;
-}  */
-
-
 
 body {
     background: var(--body-bg-color);
@@ -26,7 +18,7 @@ body {
     background: var(--main-bg-color);
     width: 55%;
     top: 0;  
-    margin-top: 55px;
+    margin-top: 0;
     margin-right: auto;
     margin-bottom: auto;
     margin-left: auto;
