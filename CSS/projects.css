@@ -37,9 +37,15 @@ ul {
     gap: 15px;
 }
 
-.description {
+p.description {
     font-size: 1.3em;
     line-height: 1.1em;
+    margin: 6px;
+}
+
+p.intro {
+    font-size: 1.6em;
+    line-height: 1.3em;
     margin: 6px;
 }
 
@@ -47,7 +53,6 @@ ul {
     font-style: italic;
     text-align: end;
     margin: 6px;
-
 }
 
 .player-container {
@@ -162,5 +167,9 @@ img.interactable:hover {
         width:  280px;
         height: 157.5px;
         background-size: cover;
+    }
+
+    .container img {
+        margin: 0px;
     }
 }
