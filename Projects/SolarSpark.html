@@ -54,10 +54,7 @@
 
         <!-- Game introduction-->
         <div class="smallbox l">
-            <h1>Solar Spark - CaliCat Studios</h1>
-        
-
-            
+            <h1>Solar Spark - CaliCat Studios</h1>       
 
             <a href="../portfolio.html">
                 <button class = "returnbutton">Return</button>
@@ -91,18 +88,9 @@
             </div>
 
             <p class="description">
-                Solar Spark was created in my final year at Falmouth University with a 6 month development time and it is the project I am most proud
-                of.
+                Solar Spark was created in my final year at Falmouth University with a years development time and it is the project I am most proud
+                of. This project was created by a total of 13 people, composed of 3 programmers, 3 designers, 5 artists, a writer and an animator.
             </p>
-
-            <!-- <div class="skills">
-                <ul>Skills:
-                    <li>C#</li>
-                    <li>Unity</li>
-                    <li>Git</li>
-                </ul>
-
-            </div> -->
 
         </div>
 
@@ -157,14 +145,14 @@
                     <li>Familiarity with this approach.</li>
                 </ul>
             <p class="description">
-                I used a package from the asset store to avoid having to create a behaviour tree system from scratch which would have taken precious time from the project <i>see below</i>.
-                
+                I used a package from the asset store to avoid having to create a behaviour tree system from scratch which would have taken precious time from the project <i>see below</i>                
             </p>
 
             <h4>Find Player</h4>
             <p class="description">
                 I began by creating a node which would detect the player, so that only enemies close to the player would engage. I went with a 'field of view' cone approach, by checking collisions
                 in sphere then checking if there is a valid angle to the player.
+
             </p>
            
 
@@ -178,11 +166,21 @@
             <br>
             
             <h3>Boss AI</h3>
+            <div class="player-container">
+                <div id="playerSobek"></div>
+            </div>
+
+            <h3>Scripts</h3>
             <p class="description">
-                <div class="player-container">
-                    <div id="playerSobek"></div>
-                </div>
+                <a id ="link" target ="_blank" href = "https://github.com/LooseCann0n/SolarSpark/blob/d7e25ea9ed67f3f3f2c052ab4e1147c908ca8185/Assets/Scripts/AI/Behaviour%20Trees/FindPlayer.cs#L1">FindPlayer</a>
+                 - A Field of view check to determine if player is in sight
+                 <br>
+                <a id ="link" target ="_blank" href = "https://github.com/LooseCann0n/SolarSpark/blob/d7e25ea9ed67f3f3f2c052ab4e1147c908ca8185/Assets/Scripts/AI/Behaviour%20Trees/FindAttackers.cs#L1">FindAttackers</a>
+                 - Determines if there is an available space to attack the player
             </p>
+            
+
+
         </div>
 
         <br>
@@ -223,20 +221,6 @@
             </p>
         </div>
 
-        <br>
-        <hr>
-        <br>
-
-
-        <!-- Menu box: -->
-        <!-- <div class="smallbox l">
-            <h3>Menu System</h3>
-            <p class="description">
-
-            </p>
-
-        </div> -->
-     
         <br>
         <hr>
         <br>
@@ -307,6 +291,18 @@
                 damage, there would be a small amount
                 of shake. This achieved the intended effect of improving game feel.
             </p>
+
+            <h3>Scripts</h3>
+            <p class="description">
+                <a id ="link" target ="_blank" href = "https://github.com/LooseCann0n/SolarSpark/blob/master/Assets/Scripts/Camera/CameraLockOn.cs#L1">CameraLockOn</a>
+                - Locks the camera onto the closest enemy within a valid angle
+                <br>
+                <a id ="link" target ="_blank" href = "https://github.com/LooseCann0n/SolarSpark/blob/d7e25ea9ed67f3f3f2c052ab4e1147c908ca8185/Assets/Scripts/CameraShake.cs#L1">CameraShake</a>
+                - Adds an accessible method which can be called to shake the Cinemachine Vcam
+            </p>
+
+            
+                
         </div>
     </div>
 </body>

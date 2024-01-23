@@ -34,6 +34,10 @@ h5{
     margin: 0;
 }
 
+h6{
+    margin: 0;
+}
+
 
 hr {
     border: none;
@@ -58,7 +62,8 @@ br {
 /* Link Settings */
 
 a:link {
-    color: pink;
+    font-style: italic;
+    color: palevioletred;
     background-color: transparent;
     text-decoration: none;
   }
