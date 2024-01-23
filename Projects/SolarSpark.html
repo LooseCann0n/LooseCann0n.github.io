@@ -166,9 +166,18 @@
             <br>
             
             <h3>Boss AI</h3>
+            <p class="description">
+                Sobek was the final component of our vertical slice. A mechanical crocodile scientist corrupted by the influence of the villain Set, he serves as the boss encounter. 
+                <br>
+                For the design he was to be imposing and a serious threat to the player, with his weakness being his speed. This was all taken into account with its AI. A video of the fight is available below.
+
+            </p>
             <div class="player-container">
                 <div id="playerSobek"></div>
             </div>
+            <p class="description">
+                
+            </p>
 
             <h3>Scripts</h3>
             <p class="description">
@@ -191,7 +200,9 @@
             <h3>Input System</h3>
             <p class="description">
                 Working closely with designers. The first step was to decide on what abilties and actions we wanted the player to have, afterward we could begin creating a control layout. We decided upon
-                a easy to pickup control scheme. So we decided upon a light attack & wide attack, a dash to quickly traverse the battlefield, a jump to navigate the environments, a interaction key, a block to
+                a easy to pickup control scheme.
+                <br>
+                We decided upon a light attack & wide attack, a dash to quickly traverse the battlefield, a jump to navigate the environments, a interaction key, a block to
                 avoid enemy damage and with correct timing allow for a parry, a special attack and a healing ability.
             </p>
             
@@ -200,16 +211,11 @@
             <h4>Prompts</h4>
             <p class="description">
                 I encouraged moving over to the new Unity input system as quickly as possible. As the longer this took the more code we would have to refactor and the less flexibility we would have with button interactions.
-                In additon, I used the <a id="link" href="https://assetstore.unity.com/packages/tools/gui/input-icons-for-tmpro-213736">Input Icons</a> package to create dynamic icon prompts in the tutorial, updating when the user
+                In addition, I used the <a id="link" href="https://assetstore.unity.com/packages/tools/gui/input-icons-for-tmpro-213736">Input Icons</a> package to create dynamic icon prompts in the tutorial, updating when the user
                 switches to a different input device.  
                 <!-- For the combat system we wanted a simple
                 easy to pickup control scheme. So we decided upon a light attack & wide attack, a dash to quickly traverse the battlefield. -->
             </p>
-
-               
-                <br>
-
-
 
             <div class=".container">
                     <img src="../Images/CombinedInputImage.png">
@@ -217,7 +223,6 @@
             
             <p class="description">
                 The image above shows the menu rebinding screen, players can change the input for the controls for either gamepad or keyboard.
-
             </p>
         </div>
 
@@ -275,21 +280,22 @@
             <p class="description">
                 In order to test the camera, I created a small environment with a variety of different walls to simulate
                 the different elevations
-                that the camera would have to deal with. I chose to use "" as it was most similar to a 3rd person
-                follow. After coming up with a prototype
-                that I was pleased with, I showed the progress to the team. The changes I made were to move the camera
-                further back. We felt that it being
-                close to the player could make it difficult to anticipate enemy movements.
+                that the camera would have to deal with. For the virtual cinemachine camera, I decided to use 'Framing Transposer' body with POV aim as it was most similar to a 3rd person
+                follow. 
+                <br>
+                After coming up with a prototype that I was pleased with, I showed the progress to the team. The changes I made were to move the camera
+                further back. We felt that it being close to the player could make it difficult to anticipate enemy movements.
+                
             </p>
                 <br>
 
             <h4>Game Feel</h4>
             <p class="description">
-                Later on in the project we were given feedback that we needed to improve game feel. Using <i>Cinemachine
-                impulse</i> allowed me to add camera shake,
-                via an event. This meant that when the player dealt damage to enemies, used a special attack or took
-                damage, there would be a small amount
-                of shake. This achieved the intended effect of improving game feel.
+                Later on in the project we were given feedback that we needed to improve game feel. 
+                Using <a id = "link" target="_blank" href = "https://docs.unity3d.com/Packages/com.unity.cinemachine@2.3/manual/CinemachineImpulse.html">Cinemachine impulse</a>
+                impulse allowed me to add camera shake, via an event.
+                This meant that when the player dealt damage to enemies, used a special attack or took damage, there would be a small amount of shake.
+                This achieved the goal of improving game feel.
             </p>
 
             <h3>Scripts</h3>
@@ -298,7 +304,7 @@
                 - Locks the camera onto the closest enemy within a valid angle
                 <br>
                 <a id ="link" target ="_blank" href = "https://github.com/LooseCann0n/SolarSpark/blob/d7e25ea9ed67f3f3f2c052ab4e1147c908ca8185/Assets/Scripts/CameraShake.cs#L1">CameraShake</a>
-                - Adds an accessible method which can be called to shake the Cinemachine Vcam
+                - Adds an event which can be called to shake the Cinemachine Vcam
             </p>
 
             

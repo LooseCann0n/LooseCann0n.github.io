@@ -127,7 +127,15 @@ img.interactable:hover {
 {
     p.description {
         font-size: 1.2em;
+        line-height: 1.4em;
     }
+
+    p.intro {
+        font-size: 1.1em;
+        line-height: 1.4em;
+        margin: 6px;
+    }
+    
 
     ul {
         font-size: 1em;
@@ -141,7 +149,8 @@ img.interactable:hover {
 @media (max-width: 500px)
 {
     p.description {
-        font-size: 1em;
+        font-size: 0.9em;
+        line-height: 1.5em;
     }
 
     
@@ -163,10 +172,8 @@ img.interactable:hover {
     
 
     img#grid {
-        float: left;
         width:  280px;
         height: 157.5px;
-        background-size: cover;
     }
 
     .container img {
