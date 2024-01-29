@@ -40,10 +40,9 @@ h6{
 
 
 hr {
-    border: none;
+    color: var(--body-bg-color);
     background-color: var(--body-bg-color);
     width: 90%;
-    height: 2px
 }
 
 br {
@@ -51,6 +50,12 @@ br {
     margin: 10px 0;
 }
 
+.hr-with-line-breaks {
+    display: block;
+    content: "\A\A\A\A";
+    white-space: pre;
+    font-size: 40px;
+}
 .box {
     text-align: center;
     width: 100px;

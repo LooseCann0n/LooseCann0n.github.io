@@ -38,76 +38,119 @@
 
 <body>
     <div class="main">      
-            <div class=title>
-                <h1>Thomas Billett</h1>
-            </div>
-            
-            <br>
-            <hr>
-            <br>
-
-            <div class="smallbox l">
-                <h1>The Penumbra - CitraLux Studios</h1>           
-
-                <a href="../portfolio.html#penumbra-anchor">
-                    <button class = "returnbutton">Return</button>
-                </a>
-
-                <br>
-
-                <h3>Grade Awarded - 2:1</h3>
-
-                <!-- <div class="skills">
-                    <li>C#</li>
-                    <li>Unity</li>
-                    <li>Git</li>
-                </div> -->
-
-                <div class="player-container">
-                    <div id="player"> </div>                 
-                </div>
-
-                <h3>Introduction</h3>
-
-                <p class = "description">
-                    The ‘Penumbra’ is a Virtual Reality stealth game, set in a fictional world based upon early 20th century noir movement, popularised by Hollywood in the 1940s/50s. The player plays as a Penumbra, an oppressed race, persecuted for their ability to exist in both light and dark within a world ruled by Lumens and shade (Races that exist solely in the light and the shadow respectively).
-                    <br>
-                    The objective is to escape imprisonment and navigate this dystopian environment uncovering the worlds shadowy past. Ultimately aiming to break the penumbra out of their servitude. To aid the player’s journey they must steal a highly experimental light manipulation device which can force either the Lumen or the Shade out of existence, thus enabling the player to safely traverse their hostile surroundings.
-                </p>
-                <div class="itch-container">
-                    <iframe src="https://itch.io/embed/1516867?dark=true" width="552" height="167" frameborder="0"><a href="https://tbillett.itch.io/the-penumbra">The Penumbra by TBillett, TJTega, EJBaldwin, Kovacore</a></iframe>
-                </div>
-            </div>
-
-            <br>
-            <hr>
-            <br>
-
-                        
-            <div class="smallbox l">
-                <h3>My Roles</h3>
-                <p class="description">
-                    <ul class="innerfirst">
-                        <li><b>AI Programmer:</b> This was my specialism in the project and where most amount of my efforts
-                            were focused. Created AI systems for enemies.</li>
-                    </ul>
-
-
-                    <h3>Contributions</h3>
-
-                    <ul>                     
-                        <li><b>Enemy AI & Animations: </b> I created sword and axe enemy variant, hooked up animations and repurposed existing AI functionality
-                            to create the final boss.</li>
-                        <li><b>Build Creation: </b>I was in charge of creating weekly builds, this allowed us to get frequent playtesting</li>
-                        <li><b>Trailer Materials: </b>I recorded gameplay footage, collected resources and materials for use in the trailer </li>
-                        <li><b>Bugfixing: </b></li>
-                    </ul>
-
-                    <i>A more detailed version of my roles and contributions is further below</i>
-                </p>
-            </div>
-            
+        <div class=title>
+            <h1>Thomas Billett</h1>
+        </div>
         
+        <hr class="hr-with-line-breaks">
+
+        <div class="smallbox l">
+            <h1>The Penumbra - CitraLux Studios</h1>           
+
+            <a href="../portfolio.html#penumbra-anchor">
+                <button class = "returnbutton">Return</button>
+            </a>
+
+            <br>
+
+            <h3>Grade Awarded - 2:1</h3>
+
+            <!-- <div class="skills">
+                <li>C#</li>
+                <li>Unity</li>
+                <li>Git</li>
+            </div> -->
+
+            <div class="player-container">
+                <div id="player"> </div>                 
+            </div>
+
+            <h3>Introduction</h3>
+
+            <p class = "description">
+                The ‘Penumbra’ is a Virtual Reality stealth game, set in a fictional world based upon early 20th century noir movement, popularised by Hollywood in the 1940s/50s. The player plays as a Penumbra, an oppressed race, persecuted for their ability to exist in both light and dark within a world ruled by Lumens and shade (Races that exist solely in the light and the shadow respectively).
+                <br>
+                The objective is to escape imprisonment and navigate this dystopian environment uncovering the worlds shadowy past. Ultimately aiming to break the penumbra out of their servitude. To aid the player’s journey they must steal a highly experimental light manipulation device which can force either the Lumen or the Shade out of existence, thus enabling the player to safely traverse their hostile surroundings.
+            </p>
+            <div class="itch-container">
+                <iframe src="https://itch.io/embed/1516867?dark=true" width="552" height="167" frameborder="0"><a href="https://tbillett.itch.io/the-penumbra">The Penumbra by TBillett, TJTega, EJBaldwin, Kovacore</a></iframe>
+            </div>
+        </div>
+
+        <hr class="hr-with-line-breaks">
+                    
+        <div class="smallbox l">
+            <h3>My Roles</h3>
+            <p class="description">
+                <ul class="innerfirst">
+                    <li><b>AI Programmer:</b> This was my specialism in the project and where most amount of my efforts
+                        were focused. Created AI which patrolled and searched for the player.</li>
+                </ul>
+
+
+                <h3>Contributions</h3>
+
+                <ul>                     
+                    <li><b>Enemy AI: </b>I created lumen and shade enemy variants, setup patrol paths and created a pursuit and search system</li>
+                    <li><b>NavMesh: </b>Setup the navigation mesh in all levels to ensure the correct AI pathfinding</li>
+                    <li><b>Build Creation: </b>I was in charge of creating weekly builds, this allowed us to get frequent playtesting</li>
+                    <li><b>Trailer Materials: </b>I recorded gameplay footage, collected resources and materials for use in the trailer </li>
+                    <li><b>Enemy Light Interaction: </b>Created the mechanic which determined whether enemies were in the light or dark. Altering their properties depending on their type (lumen/shade).</li>
+                    <li><b>Bugfixing: </b></li>
+                </ul>
+
+                <i>A more detailed version of my roles and contributions is further below</i>
+            </p>
+        </div>
+        
+        <hr class="hr-with-line-breaks">
+
+        <div class="smallbox l">
+            <h3>Enemy AI</h3>
+            <p class="description">
+                To create the AI, I decided to use behaviour trees for the project. This was for several reasons:
+            </p>
+                <ul>
+                    <li>Ease of troubleshooting due to its visual nature.</li>
+                    <li>Modularity allows nodes to be interchanged to quickly create or modify behaviours.</li>
+                    <li>Familiarity with this approach.</li>
+                </ul>
+            <p class="description">
+                I used a package from the asset store to avoid having to create a behaviour tree system from scratch which would have taken precious time from the project <i>see below</i>                
+            </p>
+
+            <h4>Find Player</h4>
+            <p class="description">
+                I began by creating a node which would detect the player, so that only enemies close to the player would engage. I went with a 'field of view' cone approach, by checking collisions
+                in sphere then checking if there is a valid angle to the player.
+
+            </p>             
+        </div>
+
+        <hr class="hr-with-line-breaks">
+
+        <div class="smallbox l">
+            <h3>Light Mechanic</h3>
+            <p class="description">
+                To create the AI, I decided to use behaviour trees for the project. This was for several reasons:
+            </p>
+                <ul>
+                    <li>Ease of troubleshooting due to its visual nature.</li>
+                    <li>Modularity allows nodes to be interchanged to quickly create or modify behaviours.</li>
+                    <li>Familiarity with this approach.</li>
+                </ul>
+            <p class="description">
+                I used a package from the asset store to avoid having to create a behaviour tree system from scratch which would have taken precious time from the project <i>see below</i>                
+            </p>
+
+            <h4>Find Player</h4>
+            <p class="description">
+                I began by creating a node which would detect the player, so that only enemies close to the player would engage. I went with a 'field of view' cone approach, by checking collisions
+                in sphere then checking if there is a valid angle to the player.
+
+            </p>
+        </div>
+
     </div>
 </body>
 
