@@ -36,7 +36,7 @@
 .topnav a:hover {
     background-color: var(--title-color);
     opacity: 1;
-    border-bottom: 3px solid var(--green-color)
+    border-bottom: 3px solid var(--title-color)
 }
 
 @media (max-width: 1000px)
