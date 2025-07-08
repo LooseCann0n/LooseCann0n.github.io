@@ -1,4 +1,5 @@
-<html lang="en">
+<html lang="en" class="swup-enabled">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,33 +14,30 @@
     <link rel="stylesheet" href="CSS/background.css">
     <link rel="stylesheet" href="CSS/buttons.css">
     <link rel="stylesheet" href="CSS/transitions.css">
-
+    <script src="https://unpkg.com/swup@4"></script>
     <!-- <script defer src="node_modules/swup/dist/Swup.modern.js"></script>
     <script defer src="script.js"></script> -->
 </head>
 
-<div class="topnav-alignment">
-    <nav class="topnav">
-        <a href="index.html">Home</a>
-        <a class="active" href="about-me.html">CV</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</div>
-<footer class="footer">© 2024 Thomas Billett. All Rights Reserved.</footer>
-
 <body>
-    <main id="swup" class="transition-fade">
+    <div class="topnav-alignment">
+        <nav class="topnav">
+            <a href="index.html">Home</a>
+            <a class="active" href="about-me.html">CV</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
 
-    <div class="main"> 
-    
+    <footer class="footer">© 2025 Thomas Billett. All Rights Reserved.</footer>
+
+    <main id="swup" class="main transition-fade">
+  
         <div class=title>
             <h1>Thomas Billett</h1>
         </div>
 
-
-            <hr class="hr-with-line-breaks">
-
+        <hr class="hr-with-line-breaks">
 
         <div class="smallbox">
             <h1>Curriculum Vitae</h1>
@@ -54,10 +52,11 @@
         </div>
 
         
-            <hr class="hr-with-line-breaks">
+        <hr class="hr-with-line-breaks">
 
-    
-    </div>
     </main>
+
+    <script type="module" src ="animations.js"></script>
+
 </body>
 </html>

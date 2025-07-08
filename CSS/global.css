@@ -71,25 +71,32 @@ a:link {
     color: palevioletred;
     background-color: transparent;
     text-decoration: none;
-  }
+}
   
-  a:visited {
-    color: var(--button-color);
-    background-color: transparent;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    color: var(--green-color);
-    background-color: transparent;
-    text-decoration: underline;
-  }
-  
-  a:active {
-    color: yellow;
-    background-color: transparent;
-    text-decoration: underline;
-  }
+a:visited {
+color: var(--button-color);
+background-color: transparent;
+text-decoration: none;
+}
+
+a:hover {
+color: var(--green-color);
+background-color: transparent;
+text-decoration: underline;
+}
+
+a:active {
+color: yellow;
+background-color: transparent;
+text-decoration: underline;
+}
+
+.pageswap {
+    color: red;
+    background-color: black;
+
+}
+
 
 @media (max-width: 1000px) 
 {

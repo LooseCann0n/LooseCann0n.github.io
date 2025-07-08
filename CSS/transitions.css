@@ -1,21 +1,56 @@
-.transition-fade {
+ /* .transition-fade {
   opacity: 1;
   transition: 500ms;
-  transform: translateX(0);
-  transform-origin: left;
+  transform: translateY(0);
+  transform-origin: up;
 }
 
 html.is-animating .transition-fade {
-  opacity: 1;
-  transform: translateX(100%);
+  opacity: 0;
+  transform: translateY(0%);
 }
 
 html.is-leaving .transition-fade {
-  opacity: 0;
-  transform: translateX(0);
+  opacity: 1;
+  transform: translateY(-100%);
+} */
 
+.transition-fade {
+  opacity: 1;
+  transition: opacity 0.4s ease;
 }
 
+/* When Swup adds this, it fades the old page out */
+html.is-animating .transition-fade {
+  opacity: 0;
+}
+
+@keyframes upThenDownFadeIn {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-up-down-fade {
+  animation: upThenDownFadeIn 1s ease-out forwards;
+}
+
+/*
 .transition-swipe {
   transition: 500ms;
   transform: translateY(0);
@@ -23,4 +58,22 @@ html.is-leaving .transition-fade {
 
 html.is-animating .transition-swipe {
   transform: translateY(100px);
+} */
+
+/* .transition-fade {
+  opacity: 1;
+  transition: opacity 0.5s ease;
 }
+
+html.is-animating .transition-fade {
+  opacity: 0;
+} */
+
+/* body {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+body.fade-in {
+  opacity: 1;
+} */

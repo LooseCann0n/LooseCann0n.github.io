@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../CSS/topnav.css">
     <link rel="stylesheet" href="../CSS/background.css">
     <link rel="stylesheet" href="../CSS/buttons.css">
+    <script src="https://unpkg.com/swup@4"></script>
 
     <script src="https://www.youtube.com/iframe_api"></script>
     <script>
@@ -33,17 +34,18 @@
 </head>
 
 <!-- Topbar with links to other webpages -->
-<div class="topnav-alignment">
-    <nav class="topnav">
-        <a href="../index.html">Home</a>
-        <a href="../about-me.html">CV</a>
-        <a class="active" href="../portfolio.html">Portfolio</a>
-        <a href="../contact.html">Contact</a>
-    </nav>
-</div>
-
 <body>
-    <div class="main">
+    <div class="topnav-alignment">
+        <nav class="topnav">
+            <a href="../index.html">Home</a>
+            <a href="../about-me.html">CV</a>
+            <a class="active" href="../portfolio.html">Portfolio</a>
+            <a href="../contact.html">Contact</a>
+        </nav>
+    </div>
+
+
+    <main id="swup" class="main transition-fade">
         <div class=title>
             <h1>Thomas Billett</h1>      
         </div>
@@ -293,7 +295,8 @@
             </p>
         </div>
         
-    </div>
+    </main>
+    <script type="module" src ="animations.js"></script>
 </body>
 
 </html>
