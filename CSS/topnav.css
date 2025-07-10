@@ -23,19 +23,19 @@
     padding: 14px 16px;
     text-decoration: none;
     font-size: 1.5em;
-    opacity: 0.6;
+    opacity: 0.8;
     transition: 0.5s;
     border-bottom: 3px solid var(--topnav-color)
 }
 
 .topnav a.active {
-    opacity: 0.75;
+    opacity: 0.9;
     border-bottom: 3px solid var(--green-color)
 }
 
 .topnav a:hover {
     background-color: var(--title-color);
-    opacity: 1;
+    opacity: 1.2;
     border-bottom: 3px solid var(--title-color)
 }
 

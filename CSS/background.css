@@ -15,7 +15,7 @@ body {
     background: var(--body-bg-color);
 }
 
-.main {
+/* .main {
     background: var(--main-bg-color);
     width: 55%;
     top: 0;  
@@ -26,6 +26,15 @@ body {
     position: relative;
     padding: 20px;
     height: auto;
+} */
+
+.main {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+  color: #fff;
+  background-color: #0b1a36;
+  border-radius: 10px;
 }
 
 @media (max-width: 1000px)

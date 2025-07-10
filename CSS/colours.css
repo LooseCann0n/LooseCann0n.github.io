@@ -3,7 +3,11 @@
     --main-otherlight-color: wheat;
     --body-bg-color: #202231;
     --main-bg-color: #67615F;
-    --topnav-color: #86878F;
+
+    --topnav-color: #1a1f2b;
+    /* --topnav-color: #2f3542;
+    --topnav-color: #2f3542; */
+    /* --topnav-color: #86878F; */
     --title-color: #081f3c;
     --green-color: #42B887;
     --button-color: #5783db;
