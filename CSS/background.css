@@ -34,14 +34,12 @@ body {
   padding: 2rem;
   color: #fff;
   background-color: #0b1a36;
-  border-radius: 10px;
 }
 
-@media (max-width: 1000px)
+@media (max-width: 600px)
 {
     .main {
-        margin-top: 5px;
-        width: 92.5%;
-        padding: 5px;
+        font-size: 1.1rem;
+        padding: 0 1rem;   
     }
 }
