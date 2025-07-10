@@ -3,20 +3,15 @@
     font-family: sans-serif;
 }
 
-h1 {
-    font-family: "Lucida Console", "Courier New", monospace;
-    font-size: 2.5em; 
-    margin: 0;
-}
-h2 {
-    font-size: 1.6em;
-    line-height: 0.9em;
+h1, h2 {
+  font-weight: 600;
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
 }
 
 h3{
     font-family: "Lucida Console", "Courier New", monospace;
     color: var(--green-color);
-    font-size: 2.2em;
+    font-size: 2.2rem;
     margin-top: 0px;
     margin-bottom: 15px;
 }
@@ -24,13 +19,13 @@ h3{
 h4{
     font-family: "Lucida Console", "Courier New", monospace;
     color: var(--green-color);
-    font-size: 1.6em;
+    font-size: 1.6rem;
     margin-top: 8px;
     margin-bottom: 8px;
 }
 
 h5{
-    font-size: 1.4em;
+    font-size: clamp(1rem, 3vw, 2rem);
     margin: 0;
 }
 
@@ -62,6 +57,19 @@ br {
     height: 100px;
     margin: 5px;
     border: 1px solid rgba(0, 0, 0, .2);
+}
+
+.swup-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.topnav {
+  z-index: 10;
+  position: relative;
+}
+.main {
+  position: relative;
+  z-index: 1;
 }
 
 /* Link Settings */
@@ -98,45 +106,10 @@ text-decoration: underline;
 }
 
 
-@media (max-width: 1000px) 
+@media (max-width: 600px) 
 {
-    h1 {
-        font-size: 1.4em;
-    }
-
-    h2 {
-        font-size: 1em;
-    }
-
-    h3 {
-        font-size: 1.4em;
-    }
-
     hr {
         width: 95%;
-    }
-}
-
-@media (max-width: 500px) 
-{
-    h1 {
-        font-size: 1.3em;
-    }
-
-    h2 {
-        font-size: 1em;
-    }
-
-    h3 {
-        font-size: 1.2em;
-    }
-
-    hr {
-        width: 95%;
-    }
-
-    h5{
-        font-size: 0.6em;
     }
 }
 

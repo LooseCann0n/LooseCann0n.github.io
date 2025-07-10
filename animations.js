@@ -22,48 +22,44 @@ function updateActiveNavLink() {
 
 const swup = new Swup();
 
-swup.hooks.on('content:replace', () => {
-    updateActiveNavLink();
-
-    const main = document.getElementById('swup');
-    if (!main) return;
-    main.classList.remove('animate-up-down-fade');
-    void main.offsetWidth;
-    main.classList.add('animate-up-down-fade');
-});
 
 
-// Also run it on initial page load
-// updateActiveNavLink();
-
-// const swup = new Swup();
-
-// const isFirstLoad = !sessionStorage.getItem('hasVisited');
-
-// // Always mark as visited now
-// sessionStorage.setItem('hasVisited', 'true');
+// const swup = new Swup({
+//   containers: ['#swup']
+// });
 
 // swup.hooks.on('content:replace', () => {
-//     if (isFirstLoad) 
-//         return;
-// console.log("Swup content replaced");
+//     updateActiveNavLink();
 
-// const main = document.getElementById('swup');
-// if (!main) return;
-// updateActiveNavLink();
-// main.classList.remove('animate-up-down-fade');
-// void main.offsetWidth;
-// main.classList.add('animate-up-down-fade');
+//     const main = document.getElementById('swup');
+//     if (!main) return;
+//     main.classList.remove('animate-down-fade');
+//     void main.offsetWidth;
+//     main.classList.add('animate-down-fade');
 // });
 
 
 
+swup.hooks.on('content:replace', () => {
+  updateActiveNavLink();
 
+  const main = document.getElementById('swup');
+  if (!main) return;
 
+  // Remove any existing animation class
+  main.classList.remove('animate-down-fade');
 
+  // Force reflow to restart animation
+  void main.offsetWidth;
 
+  // Add the drop-in animation class
+  main.classList.add('animate-down-fade');
 
-
+  // Optional: clean up after animation ends
+  main.addEventListener('animationend', () => {
+    main.classList.remove('animate-down-fade');
+  }, { once: true });
+});
 
 
 
