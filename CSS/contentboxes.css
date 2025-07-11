@@ -1,6 +1,6 @@
 .title {
     color: white;
-    background-color: var(--title-color);
+    background-color: var(--content-grid-color);
     max-width: 600px;
     letter-spacing: 1px;
     padding: 10px 10px 30px;
@@ -31,14 +31,32 @@
     text-align: left;
 }
 
-/*Project card */
+/*Project grid & cards */
 
+.projects-grid {
+  display: grid;
+  background-color: var(--content-grid-color);
+  grid-template-columns: repeat(auto-fit, 1fr); /* Always 2 columns */
+  /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); Always 2 columns */
+  gap: 2rem;
+  padding: 2rem;
+  border-radius: 8px;
+  border: 2px solid white;
+}
+
+.featured {
+  grid-column: span 2;
+}
 
 .project-card { 
   background-color: var(--title-color);
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.4);
   transition: transform 0.3s;
+  width: auto;
+  box-sizing: border-box;
+  padding: 1rem;
+  overflow: hidden;
 }
 
 .project-card:hover {
@@ -47,31 +65,26 @@
 
 .project-card img {
   width: 100%;
+  height: auto;
+  display: block;
   border-radius: 4px;
   margin-bottom: 0.7rem;
+  
 }
 
 .project-card h4 {
   margin: 0.5rem 0;
 }
 
-.projects-grid {
-  display: grid;
-  background-color: var(--content-grid-color);
-  grid-template-columns: repeat(2, 1fr); /* Always 2 columns */
-  gap: 2rem;
-  padding: 2rem;
-  border-radius: 8px;
-}
 
-.featured {
-  grid-column: span 2;
-}
 
 @media (max-width: 768px) {
   .projects-grid {
     grid-template-columns: 1fr; /* Collapse to 1 column on small screens */
   }
+  .featured {
+  grid-column: span 1;
+}
 
 }
 

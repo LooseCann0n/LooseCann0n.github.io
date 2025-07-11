@@ -14,16 +14,7 @@
     <link rel="stylesheet" href="../CSS/buttons.css">
     <script src="https://unpkg.com/swup@4"></script>
     <script src="https://www.youtube.com/iframe_api"></script>
-    <script>
-    // Create a YouTube player when the API is ready
-    function onYouTubeIframeAPIReady() {
-        var player = new YT.Player('player', {
-        height: '100%',
-        width: '100%',
-        videoId: '4f8x1sx2xSQ',
-        });
-    }
-    </script>
+    <script src="/js/youtube-player.js" defer></script>
 </head>
 <body>
     <div class="topnav-alignment">
@@ -45,10 +36,6 @@
 
         <div class="smallbox l">
             <h1>Dissertation</h1>
-            
-            <a href="../portfolio.html#dissertation-anchor">
-                <button class = "returnbutton">Return</button>
-            </a>
 
             <br>
             
@@ -78,7 +65,7 @@
         </div>
         
     </main>
-    <script type="module" src ="animations.js"></script>
+    <script type="module" src ="/js/animations.js"></script>
 </body>
 
 </html>

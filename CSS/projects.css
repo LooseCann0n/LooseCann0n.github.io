@@ -7,8 +7,6 @@
     gap: 5px;
 }
 
-
-
 li{
     border: none;
     color: white;
@@ -19,19 +17,12 @@ li{
     margin-right: 15px;
 }
 
-/* li.s{
-    border-radius: 8px;
-} */
-
 ul {
 	position: relative;
 	list-style: none;
 	margin-left: 0;
 	padding-left: 1.2em;
 }
-
-
-
 
 .buttoncontainer {
     display: flex;
@@ -85,6 +76,7 @@ iframe {
     width: 100%;
   }
 
+  
 /* Images */
 
 img {

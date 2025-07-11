@@ -13,18 +13,7 @@
     <link rel="stylesheet" href="../CSS/background.css">
     <link rel="stylesheet" href="../CSS/buttons.css">
     <script src="https://unpkg.com/swup@4"></script>
-
-    <script src="https://www.youtube.com/iframe_api"></script>
-    <script>
-      // Create a YouTube player when the API is ready
-    function onYouTubeIframeAPIReady() {
-        var player = new YT.Player('player', {
-            height: '100%',
-            width: '100%',
-            videoId: 'RPqrLZZzWc0',
-        });
-    }
-    </script>
+    <script src="/js/youtube-player.js" defer></script>
 
 </head>
 <body>
@@ -48,10 +37,6 @@
         <div class="smallbox l">
             <h1>The Penumbra - CitraLux Studios</h1>           
 
-            <a href="../portfolio.html#penumbra-anchor">
-                <button class = "returnbutton">Return</button>
-            </a>
-
             <br>
 
             <h3>Grade Awarded - 2:1</h3>
@@ -63,7 +48,7 @@
             </div> -->
 
             <div class="player-container">
-                <div id="player"> </div>                 
+                <div id="trailerPlayer" data-youtube-id="RPqrLZZzWc0"> </div>                 
             </div>
 
             <h3>Introduction</h3>
@@ -158,7 +143,7 @@
 
     </main>
 
-    <script type="module" src ="animations.js"></script>
+    <script type="module" src ="/js/animations.js"></script>
 </body>
 
 </html>
