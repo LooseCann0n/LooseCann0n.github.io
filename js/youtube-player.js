@@ -1,6 +1,8 @@
+// Youtube Player init logic
 let players = [];
 
-function onYouTubeIframeAPIReady() {
+export function initYouTubePlayers() {
+  // Ensure the YouTube Iframe API is loaded
   const playerElements = document.querySelectorAll('[data-youtube-id]');
   
   playerElements.forEach(el => {
@@ -14,7 +16,12 @@ function onYouTubeIframeAPIReady() {
   });
 }
 
-// Dynamically load the YouTube Iframe API (optional if you use <script> in HTML)
+// Separated function to easy call when swup replaces content
+export function onYouTubeIframeAPIReady() {
+  initYouTubePlayers();
+}
+
+// Dynamically load the YouTube Iframe API)
 (function loadAPI() {
   if (!window.YT) {
     const tag = document.createElement('script');
@@ -22,3 +29,6 @@ function onYouTubeIframeAPIReady() {
     document.head.appendChild(tag);
   }
 })();
+
+// Ensure global callback calls the right function
+window.onYouTubeIframeAPIReady = onYouTubeIframeAPIReady;

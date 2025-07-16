@@ -1,4 +1,5 @@
-console.log("JS loaded!");
+import { initYouTubePlayers } from './youtube-player.js'; 
+
 // Changes the active website page since topnav does not get swup
 function updateActiveNavLink() {
     let currentPath = window.location.pathname.split('/').pop() || 'index.html';
@@ -20,10 +21,12 @@ function updateActiveNavLink() {
 }
 
 
+// Swup for page transitions
 const swup = new Swup();
 
 swup.hooks.on('content:replace', () => {
   updateActiveNavLink();
+
 
   const main = document.getElementById('swup');
   if (!main) return;
@@ -41,4 +44,9 @@ swup.hooks.on('content:replace', () => {
   main.addEventListener('animationend', () => {
     main.classList.remove('animate-down-fade');
   }, { once: true });
+
+    if (window.YT && typeof YT.Player === 'function') {
+    initYouTubePlayers();
+  }
 });
+
