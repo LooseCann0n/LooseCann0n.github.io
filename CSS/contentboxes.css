@@ -16,7 +16,6 @@
 .smallbox {
     color: white;
     background-color: var(--content-grid-color);
-    width: 80%;
     margin: auto;
     letter-spacing: 1px;
     padding: 10px 10px 10px;
@@ -46,10 +45,16 @@
 
 .featured {
   grid-column: span 2;
+  text-decoration: none;
+}
+
+.featured:hover {
+  text-decoration: none;
 }
 
 .project-card { 
   background-color: var(--title-color);
+
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.4);
   transition: transform 0.3s;
@@ -57,10 +62,15 @@
   box-sizing: border-box;
   padding: 1rem;
   overflow: hidden;
+  text-decoration: none;
 }
 
+
+
 .project-card:hover {
-  transform: scale(1.03);
+  text-decoration: none;
+  transform: scale(1.02);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.6);
 }
 
 .project-card img {

@@ -4,6 +4,7 @@
   padding: 0 2rem;        /* Same horizontal padding as .main */
   background-color: var(--topnav-color);
   z-index: 1;
+  position: relative;
 }
 .topnav {
     display: flex;
@@ -31,7 +32,6 @@
 }
 
 .topnav a:hover {
-    background-color: var(--title-color);
     opacity: 1;
     border-bottom: 3px solid var(--green-color)
 }

@@ -2,8 +2,14 @@ import { initYouTubePlayers } from './youtube-player.js';
 
 // Changes the active website page since topnav does not get swup
 function updateActiveNavLink() {
-    let currentPath = window.location.pathname.split('/').pop() || 'index.html';
+    console.log('Updating active nav link');
+
+    let currentPath = window.location.pathname;
+    if (currentPath == '/') { // Default to index.html if at root
+        currentPath = '/index.html'; 
+    }
     const navLinks = document.querySelectorAll('.topnav a');
+
 
     // Check if web tab ends with html
     if (!currentPath.endsWith('.html')) {
