@@ -1,23 +1,17 @@
-*
-{
-    font-family: sans-serif;
-}
 
 h1, h2 {
-  font-weight: 600;
-  font-size: clamp(2rem, 10vw, 4rem);
+    font-family: "Lato", sans-serif;
+    font-size: clamp(2rem, 10vw, 4rem);
 }
 
 h3{
     font-family: "Lucida Console", "Courier New", monospace;
     color: var(--green-color);
     font-size: 2.2rem;
-    margin-top: 0px;
-    margin-bottom: 15px;
+    margin: 0;
 }
 
 h4{
-    font-family: "Lucida Console", "Courier New", monospace;
     color: var(--green-color);
     font-size: 1.6rem;
     margin-top: 8px;
@@ -25,14 +19,14 @@ h4{
 }
 
 h5{
-    font-size: clamp(1rem, 3vw, 2rem);
+    font-family: "Lato", sans-serif;
+    font-size: clamp(2rem, 3vw, 4rem);
     margin: 0;
 }
 
 h6{
     margin: 0;
 }
-
 
 hr {
     color: var(--body-bg-color);
@@ -46,10 +40,7 @@ br {
 }
 
 .hr-with-line-breaks {
-    display: block;
-    content: "\A\A\A\A";
-    white-space: pre;
-    font-size: 40px;
+    font-size: 10px;
     color: white;
 }
 .box {
@@ -67,9 +58,16 @@ br {
 .topnav {
   z-index: 10;
   position: relative;
+  
 }
 .main {
   position: relative;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    /* font-family: "Lucida Console", "Courier New", monospace; */
+    color: white;
 }
 
 .btn {
@@ -79,9 +77,13 @@ br {
 
 /* Link Settings */
 
+a {
+    font-family: 'Lato', sans-serif;
+}
+
 a:link {
     font-style: italic;
-    color: palevioletred;
+    color: white;
     background-color: transparent;
     text-decoration: none;
 }

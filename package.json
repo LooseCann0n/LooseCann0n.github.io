@@ -1,5 +1,24 @@
 {
   "dependencies": {
     "swup": "^4.8.2"
-  }
+  },
+  "name": "loosecann0n.github.io",
+  "version": "1.0.0",
+  "description": "You can use the [editor on GitHub](https://github.com/LooseCann0n/LooseCann0n.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LooseCann0n/LooseCann0n.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LooseCann0n/LooseCann0n.github.io/issues"
+  },
+  "homepage": "https://github.com/LooseCann0n/LooseCann0n.github.io#readme"
 }

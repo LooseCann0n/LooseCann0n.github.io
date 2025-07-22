@@ -1,16 +1,29 @@
 .title {
-    color: white;
-    background-color: var(--content-grid-color);
-    max-width: 600px;
-    letter-spacing: 1px;
-    padding: 10px 10px 30px;
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    border: 2px solid white;
-    border-radius: 16px;
-    white-space: normal;
+  background: linear-gradient(145deg, rgba(8, 31, 60, 0.9), rgba(21, 42, 80, 0.85));
+  border-left: 6px solid var(--green-color);
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  margin: 2rem auto 2rem auto;
+  text-align: left;
+  max-width: 720px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+
+  /* Align center */
+  /* text-align: center;
+  border-left: none;
+  border-bottom: 4px solid var(--green-color); */
+}
+
+.title h1 {
+  font-size: clamp(2.2rem, 6vw, 3.5rem);
+  margin: 0;
+  color: white;
+}
+
+.title h5 {
+  font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+  color: var(--green-color);
+  margin-top: 0.5rem;
 }
 
 .smallbox {
@@ -35,12 +48,15 @@
 .projects-grid {
   display: grid;
   background-color: var(--content-grid-color);
-  grid-template-columns: repeat(auto-fit, 1fr); /* Always 2 columns */
-  /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); Always 2 columns */
   gap: 2rem;
-  padding: 2rem;
+  padding: 1rem;
+  margin: 0;
   border-radius: 8px;
   border: 2px solid white;
+}
+
+.project-card:hover {
+  text-decoration: none;
 }
 
 .featured {
@@ -48,28 +64,18 @@
   text-decoration: none;
 }
 
-.featured:hover {
-  text-decoration: none;
-}
-
 .project-card { 
   background-color: var(--title-color);
-
+  margin: 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
   transition: transform 0.3s;
-  width: auto;
-  box-sizing: border-box;
-  padding: 1rem;
-  overflow: hidden;
-  text-decoration: none;
 }
-
-
 
 .project-card:hover {
   text-decoration: none;
   transform: scale(1.02);
+  transform-origin: center; /* important */
   box-shadow: 0 6px 16px rgba(0,0,0,0.6);
 }
 
@@ -77,16 +83,13 @@
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 4px;
-  margin-bottom: 0.7rem;
-  
+  border-radius: 4px;  
+  object-fit: cover; /* Optional: if images have variable aspect ratios */
 }
 
 .project-card h4 {
   margin: 0.5rem 0;
 }
-
-
 
 @media (max-width: 768px) {
   .projects-grid {
