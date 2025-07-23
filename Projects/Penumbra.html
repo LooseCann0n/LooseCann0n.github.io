@@ -62,26 +62,35 @@
 
         <div class="smallbox l">
             <h3>My Roles</h3>
-            <p class="description">
-                <ul class="innerfirst">
-                    <li><b>AI Programmer:</b> This was my specialism in the project and where most amount of my efforts
-                        were focused. Created AI which patrolled and searched for the player.</li>
-                </ul>
+            <ul class="innerfirst">
+                <li><h5>AI Programmer:</h5> <p>This was my specialism in the project and where most amount of my efforts
+                    were focused. Created AI which patrolled and searched for the player.</p></li>
+            </ul>
 
+            <h3>Contributions</h3>
 
-                <h3>Contributions</h3>
+            <ul class="contributions-list">
+                <li>
+                    <h5>Enemy AI</h5>
+                    <p>I created Lumen and Shade enemy variants, set up patrol paths, and developed a pursuit and search system.</p>
+                </li>
 
-                <ul>                     
-                    <li><b>Enemy AI: </b>I created lumen and shade enemy variants, setup patrol paths and created a pursuit and search system</li>
-                    <li><b>NavMesh: </b>Setup the navigation mesh in all levels to ensure the correct AI pathfinding</li>
-                    <li><b>Build Creation: </b>I was in charge of creating weekly builds, this allowed us to get frequent playtesting</li>
-                    <li><b>Trailer Materials: </b>I recorded gameplay footage, collected resources and materials for use in the trailer </li>
-                    <li><b>Enemy Light Interaction: </b>Created the mechanic which determined whether enemies were in the light or dark. Altering their properties depending on their type (lumen/shade).</li>
-                    <li><b>Bugfixing: </b>After playtesting sessions, all discovered bugs were allocated to me and the other programmers and swiftly fixed</li>
-                </ul>
+                <li>
+                    <h5>NavMesh</h5>
+                    <p>Set up the navigation mesh in all levels to ensure correct AI pathfinding.</p>
+                </li>
+
+                <li>
+                    <h5>Build Creation</h5>
+                    <p>I was in charge of creating weekly builds, which allowed for frequent playtesting.</p>
+                </li>
+
+                <li>
+                    <h5>Trailer Materials</h5>
+                    <p>Recorded gameplay footage and gathered assets and materials for use in the promotional trailer.</p>
+                </li>
 
                 <i>A more detailed version of my roles and contributions is further below</i>
-            </p>
         </div>
         
         <div class="smallbox l">
@@ -98,7 +107,7 @@
                 I used a package from the asset store to avoid having to create a behaviour tree system from scratch which would have taken precious time from the project <i>see below</i>                
             </p>
 
-            <h4>Find Player</h4>
+            <h5>Find Player</h5>
             <p class="description">
                 I began by creating a node which would detect the player, so that only enemies close to the player would engage. I went with a 'field of view' cone approach, by checking collisions
                 in sphere then checking if there is a valid angle to the player.
@@ -117,7 +126,7 @@
                 This enabled interesting gameplay options, with another mechanic the light device. This device allowed the player to move
                 light sources in the level to other empty points.
 
-            <h4>Light Interaction</h4>
+            <h5>Light Interaction</h5>
             <p class="description">
                 First I created two different tags, one for shades and the other for lumen(light). Then I set the enemies to a default state, since all enemies did not start in a light source.
                 The shades were active by default, with the lumen being deactivated. Then once entering a light source, a collider would represent the area of that light. 

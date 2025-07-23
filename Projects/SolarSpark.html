@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../CSS/colours.css">
     <link rel="stylesheet" href="../CSS/contentboxes.css">
     <link rel="stylesheet" href="../CSS/global.css">
+    <link rel="stylesheet" href="../CSS/utilityclass.css">
     <link rel="stylesheet" href="../CSS/footer.css">
     <link rel="stylesheet" href="../CSS/topnav.css">
     <link rel="stylesheet" href="../CSS/background.css">
@@ -34,8 +35,8 @@
 
     <main id="swup" class="main transition-fade">
         <div class=title>
-            <h1>Solar Spark</h1>
-            <h5>CaliCat Studios</h5>      
+            <h1 class="white-text">Solar Spark</h1>
+            <h5 class="green-text">CaliCat Studios</h5>      
         </div>
         <!-- Game introduction-->
         <div class="smallbox l">
@@ -74,32 +75,57 @@
         <!-- Roles and contributions box -->
         <div class="smallbox l">
             <h3>My Roles</h3>
-                <p class="description">
-                    <ul class="innerfirst">
-                        <li><b>AI Programmer:</b> This was my specialism in the project and where a large amount of my efforts
-                            were focused. Created AI systems for enemies.</li>
-                    </ul>
+            <ul class="contributions-list">
+                <li><h5>AI Programmer:</h5> <p>This was my specialism in the project and where a large amount of my efforts
+                    were focused. Created AI systems for enemies.</p>
+                </li>
+            </ul>
 
-                    <h3>Contributions</h3>
+            <h3>Contributions</h3>
 
-                    <ul>
-                        <li><b>Enemy AI & Animations: </b> I created the sword and axe enemy variants, configured animations and
-                            repurposed existing AI functionality to create the final boss.</li>                                        
-                        <li><b>Input System: </b>Used Unity's input package to create a robust system, allowing for
-                            customisation for whatever we needed. Also included input prompts
-                            with a corresponding icon for several different controller.</li>
-                        <li><b>Menu System: </b>Using simple button elements, I constructed the main menu, pause menu and
-                            settings menu,</li>
-                        <li><b>Camera: </b>The Cinemachine package was used to get a basic camera, then finer details were
-                            adjusted to get the camera we desired.</li>
-                        <li><b>Build Creation: </b>I was responsible for creating weekly builds to ensure frequent
-                            playtesting.</li>
-                        <li><b>Debug Tools: </b>To reduce designer <i>'blockers'</i> I created a noclip system and a checkpoint system.</li>
-                        <li><b>Bugfixing: </b>Any bugs that were found during playtesting were noted down and fixed by me and the other programmers.</li>
-                    </ul>
+            <ul class="contributions-list">
+                <li>
+                    <h5>Enemy AI & Animations: </h5> 
+                    <p>I created the sword and axe enemy variants, configured animations and
+                    repurposed existing AI functionality to create the final boss.</p>
+                </li> 
 
-                    <i>A more detailed version of my roles and contributions is further below</i>
-                </p>
+                <li>
+                    <h5>Input System: </h5>
+                    <p>Used Unity's input package to create a robust system, allowing for
+                    customisation for whatever we needed. Also included input prompts
+                    with a corresponding icon for several different controller.</p>
+                </li>
+
+                <li>
+                    <h5>Menu System: </h5>
+                    <p>Using simple button elements, I constructed the main menu, pause menu and  settings menu </p>
+                </li>
+
+                <li>
+                    <h5>Camera: </h5>
+                    <p>The Cinemachine package was used to get a basic camera, then finer details were
+                    adjusted to get the camera we desired. </p>
+                </li>
+
+                <li>
+                    <h5>Build Creation: </h5>
+                    <p>I was responsible for creating weekly builds to ensure frequent
+                    playtesting.</p>
+                </li>
+
+                <li>
+                    <h5>Debug Tools: </h5>
+                    <p>To reduce designer <i>'blockers'</i> I created a noclip system and a checkpoint system.</p>
+                </li>
+
+                <li>
+                    <h5>Bugfixing: </h5>
+                    <p>Any bugs that were found during playtesting were noted down and fixed by me and the other programmers.</p>
+                </li>
+            </ul>
+
+            <i>A more detailed version of my roles and contributions is further below</i>
         </div>
 
         <!-- Detailed AI dev box: -->
@@ -131,7 +157,7 @@
 
             <br>
             
-            <h3>Boss AI</h3>
+            <h4>Boss AI</h4>
             <p class="description">
                 Sobek was the final component of our vertical slice. A mechanical crocodile scientist corrupted by the influence of the villain Set, he serves as the boss encounter. 
                 <br>
@@ -146,13 +172,20 @@
             </p>
 
             <h3>Scripts</h3>
-            <p class="description">
-                <a id ="link" target ="_blank" href = "https://github.com/LooseCann0n/SolarSpark/blob/d7e25ea9ed67f3f3f2c052ab4e1147c908ca8185/Assets/Scripts/AI/Behaviour%20Trees/FindPlayer.cs#L1">FindPlayer</a>
-                 - A Field of view check to determine if player is in sight
-                 <br>
-                <a id ="link" target ="_blank" href = "https://github.com/LooseCann0n/SolarSpark/blob/d7e25ea9ed67f3f3f2c052ab4e1147c908ca8185/Assets/Scripts/AI/Behaviour%20Trees/FindAttackers.cs#L1">FindAttackers</a>
-                 - Determines if there is an available space to attack the player
-            </p>
+            <ul class="contributions-list">
+                <li>
+                    <a class="script-link" target="_blank" href="https://github.com/LooseCann0n/SolarSpark/blob/d7e25ea9ed67f3f3f2c052ab4e1147c908ca8185/Assets/Scripts/AI/Behaviour%20Trees/FindPlayer.cs#L1">
+                <h5>FindPlayer</h5>
+                </a>
+                    A field of view check to determine if player is in sight.
+                </li>
+                <li>
+                    <a class="script-link" target="_blank" href="https://github.com/LooseCann0n/SolarSpark/blob/d7e25ea9ed67f3f3f2c052ab4e1147c908ca8185/Assets/Scripts/AI/Behaviour%20Trees/FindAttackers.cs#L1">
+                    <h5>FindAttackers</h5>
+                    </a>
+                    Determines if there is an available space to attack the player.
+                </li>
+            </ul>
         </div>
 
         <!-- Input system dev box: -->
@@ -168,7 +201,7 @@
             
             <br>
 
-            <h4>Prompts</h4>
+            <h5>Prompts</h5>
             <p class="description">
                 I encouraged moving over to the new Unity input system as quickly as possible. As the longer this took the more code we would have to refactor and the less flexibility we would have with button interactions.
                 In addition, I used the <a id="link" href="https://assetstore.unity.com/packages/tools/gui/input-icons-for-tmpro-213736">Input Icons</a> package to create dynamic icon prompts in the tutorial, updating when the user
@@ -230,7 +263,7 @@
             </p>
                 <br>
 
-            <h4>Game Feel</h4>
+            <h5>Game Feel</h5>
             <p class="description">
                 Later on in the project we were given feedback that we needed to improve game feel. 
                 Using <a id = "link" target="_blank" href = "https://docs.unity3d.com/Packages/com.unity.cinemachine@2.3/manual/CinemachineImpulse.html">Cinemachine impulse</a>
